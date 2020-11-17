@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="logo-icon">
-        <img class="logo-icon__image" src="https://via.placeholder.com/34x38" width="34px" height="38px" alt="Кэт энерджи">
+      <a class="page-header__logo-icon">
+        <img class="logo-icon__image" src="https://via.placeholder.com/34x38" width="34px" height="38px" alt="Логотим с изображением кота">
       </a>
-      <a class="logo-title"><b>Cat </b>Energy</a>
+      <a class="page-header__logo-title">
+        <img class="logo-icon__image" src="https://via.placeholder.com/100x18" width="100px" height="18px" alt="Кэт энерджи">
+      </a>
+      <button class="nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="page-nav">
-        <button class="page-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="page-nav__list">
           <li class="page-nav__item page-nav__item--current">
             <a>Главная</a>
@@ -31,6 +34,7 @@
         <div class="promo__wrapper">
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__text">Занялся собой? Займись котом!</p>
+          <img class="promo__image" src="https://via.placeholder.com/280x270" width="280px" height="270px" alt="Банка корма с курицей">
           <a class="promo__button regular-button" href="#">Подобрать программу</a>
         </div>
       </section>
@@ -39,7 +43,7 @@
           <h2 class="visually-hidden">Варианты программ</h2>
           <ul class="programm-variants__list">
             <li class="programm-variants__item programm-variants__item--slim">
-              <h3 class="programm-variants__title">похудение</h3>
+              <h3 class="programm-variants__title">Похудение</h3>
               <p class="programm-variants__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="programm-variants__link programm-variants__link--icon" href="#">каталог slim</a>
             </li>
@@ -76,15 +80,15 @@
           <p class="living-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
           <dl class="living-example__parameters">
             <div class="living-example__parameter">
-              <dt class="living-example__value">5 КГ</dt>
+              <dt class="living-example__value">5 кг</dt>
               <dd class="living-example__description">снижение веса</dd>
             </div>
             <div class="living-example__parameter">
-              <dt class="living-example__value">60 ДНЕЙ</dt>
+              <dt class="living-example__value">60 дней</dt>
               <dd class="living-example__description">затрачено времени</dd>
             </div>
           </dl>
-          <p class="living-example__cost">Затраты на питание: 15 000 РУБ.</p>
+          <p class="living-example__cost">Затраты на питание: 15 000 руб.</p>
           <div class="living-example__slider slider">
             <img class="slider__before" src="https://via.placeholder.com/311x232" width="311px" height="232px" alt="Толстый кот Борис">
             <img class="slider__after" src="https://via.placeholder.com/251x240" width="251px" height="240px" alt="Худой кот Борис">
