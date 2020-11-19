@@ -3,24 +3,27 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="logo-icon">
-        <img class="logo-icon__image" src="https://via.placeholder.com/34x38" width="34px" height="38px" alt="Кэт энерджи">
+      <a class="page-header__logo-icon">
+        <img class="logo-icon__image" src="https://via.placeholder.com/34x38" width="34px" height="38px" alt="Логотим с изображением кота">
       </a>
-      <a class="logo-title"><b>Cat </b>Energy</a>
+      <a class="page-header__logo-title">
+        <img class="logo-icon__image" src="https://via.placeholder.com/100x18" width="100px" height="18px" alt="Кэт энерджи">
+      </a>
+      <button class="nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="page-nav">
-        <button class="page-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="page-nav__list">
-          <li class="page-nav__item page-nav__item--current">
-            <a href="index.html">Главная</a>
+          <li class="page-nav__item page-nav__item">
+            <a class="page-nav__link" href="index.html">Главная</a>
           </li>
           <li class="page-nav__item">
-            <a href="#">Каталог продукции</a>
+            <a class="page-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="page-nav__item">
-            <a>Подбор программы</a>
+            <a class="page-nav__link page-nav__link--current">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -30,7 +33,7 @@
       <p class="page-main__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="page-main__form form" action="https://echo.htmlacademy.ru/courses" method="get">
         <fieldset class="form__fieldset">
-          <legend class="visually-hidden">Параметкы кота</legend>
+          <legend class="visually-hidden">Параметры кота</legend>
           <label class="form__label" for="cat-name">Имя:*</label>
           <input class="form__input" id="cat-name" type="text" name="cat-name" value="Барсик" required>
           <label class="form__label" for="cat-weight">Вес (кг):*</label>
@@ -41,35 +44,25 @@
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">Выбор программы</legend>
           <input class="form__radio" id="lose-weight" type="radio" name="programm" value="lose-weight" checked>
-          <label class="form__label" for="lose-weight"></label>
+          <label class="form__label" for="lose-weight">Похудение</label>
           <input class="form__radio" id="mass-grow" type="radio" name="programm" value="mass-grow">
-          <label class="form__label" for="mass-grow"></label>
+          <label class="form__label" for="mass-grow">Набор массы</label>
           <input class="form__radio" id="need-help" type="radio" name="programm" value="need-help">
-          <label class="form__label" for="need-help"></label>
+          <label class="form__label" for="need-help">Не знаю (Нужен ваш совет)</label>
         </fieldset>
-        <div class="section-title">
-          <div class="section-title__line section-title__line--left"></div>
-          <h2 class="section-title__text">Контактные данные (владельца кота)</h2>
-          <div class="section-title__line section-title__line--right"></div>
-        </div>
         <fieldset class="form__fieldset">
+          <legend class="form__legend form__legend--stripes">Контактные данные (владельца кота)</legend>
           <label class="form__label" for="email">E-mail:*</label>
           <input class="form__input" id="email" type="email" name="owner-email" value="kuklachev@gmail.com" required>
           <label class="form__label" for="tel">Телефон:*</label>
           <input class="form__input" id="tel" type="tel" name="owner-tel" value="8 (960) 900-60-90" required>
         </fieldset>
-        <div class="section-title">
-          <div class="section-title__line section-title__line--left"></div>
-          <h2 class="section-title__text">Комментарий</h2>
-          <div class="section-title__line section-title__line--right"></div>
-        </div>
-        <textarea class="form-input" rows="5" name="comment">Расскажите обо всех повадках кота</textarea>
-        <div class="section-title">
-          <div class="section-title__line section-title__line--left"></div>
-          <h2 class="section-title__text">Дополнительно</h2>
-          <div class="section-title__line section-title__line--right"></div>
-        </div>
         <fieldset class="form__fieldset">
+          <legend class="form__legend form__legend--stripes">Комментарий</legend>
+          <textarea class="form-input" rows="5" name="comment">Расскажите обо всех повадках кота</textarea>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend form__legend--stripes">Дополнительно</legend>
           <input class="form__input" type="checkbox" id="sugar-substitute" name="sugar-substitute" checked>
           <label class="form__label" for="sugar-substitute">Сахарозаменитель</label>
           <input class="form__input" type="checkbox" id="water" name="water">
@@ -79,8 +72,8 @@
           <input class="form__input" type="checkbox" id="vitamins" name="vitamins">
           <label class="form__label" for="vitamins">Витамины</label>
         </fieldset>
-        <input type="submit" value="Отправить заявку">
-        <p class="footnote">* — Обязательные поля</p>
+        <button type="submit">Отправить заявку</button>
+        <p class="form__footnote">* — Обязательные поля</p>
       </form>
     </main>
     <footer class="page-footer">
@@ -89,9 +82,11 @@
         <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <img class="page-footer__map" src="https://via.placeholder.com/320x362" width="320px" height="362px" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      <img class="page-footer__map" src="img/location.jpg" width="320px" height="362px" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       <div class="page-footer__bottom footer-bottom">
-        <a class="logo-title"><b>Cat </b>Energy</a>
+        <a class="page-footer__logo">
+          <img src="https://via.placeholder.com/128x24" width="128px" height="24px" alt="Кэт энерджи">
+        </a>
         <ul class="footer-bottom__socials socials">
           <li class="socials__item">
             <a class="socials__link socials__link--vkontakte" href="https://vk.com/">ВКонтакте</a>
