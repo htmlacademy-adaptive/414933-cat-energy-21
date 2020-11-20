@@ -3,24 +3,27 @@
   <head class="page">
     <meta charset="UTF-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="logo-icon">
-        <img class="logo-icon__image" src="https://via.placeholder.com/34x38" width="34px" height="38px" alt="Кэт энерджи">
+      <a class="page-header__logo-icon">
+        <img class="logo-icon__image" src="https://via.placeholder.com/34x38" width="34" height="38" alt="Логотим с изображением кота">
       </a>
-      <a class="logo-title"><b>Cat </b>Energy</a>
+      <a class="page-header__logo-title">
+        <img class="logo-icon__image" src="https://via.placeholder.com/100x18" width="100" height="18" alt="Кэт энерджи">
+      </a>
+      <button class="nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="page-nav">
-        <button class="page-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="page-nav__list">
-          <li class="page-nav__item page-nav__item--current">
-            <a href="index.html">Главная</a>
+          <li class="page-nav__item page-nav__item">
+            <a class="page-nav__link" href="index.html">Главная</a>
           </li>
           <li class="page-nav__item">
-            <a>Каталог продукции</a>
+            <a class="page-nav__link page-nav__link--current">Каталог продукции</a>
           </li>
           <li class="page-nav__item">
-            <a href="#">Подбор программы</a>
+            <a class="page-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -31,7 +34,7 @@
         <h2 class="visually-hidden">Основные товары</h2>
         <ul class="catalog__list">
           <li class="catalog__item product">
-            <a href="#"><img class="product__img" src="https://via.placeholder.com/85x100" width="85px" height="100px" alt="Cat Energy Pro 500 г"></a>
+            <a href="#"><img class="product__img" src="https://via.placeholder.com/85x100" alt="Cat Energy Pro 500 г"></a>
             <a href="#"><h3 class="product__titile">Cat Energy Pro 500 г</h3></a>
             <table class="product__info product-info">
               <tr class="product-info__row">
@@ -47,10 +50,10 @@
                 <td class="product-info__value">700 р.</td>
               </tr>
             </table>
-            <a class="product__button regular-button" href="#">Заказать</a>
+            <a class="product__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
-            <a href="#"><img class="product__img" src="https://via.placeholder.com/85x100" width="85px" height="100px" alt="Cat Energy Pro 1000 г"></a>
+            <a href="#"><img class="product__img" src="https://via.placeholder.com/85x100" alt="Cat Energy Pro 1000 г"></a>
             <a href="#"><h3 class="product__titile">Cat Energy Pro 1000 г</h3></a>
             <table class="product__info product-info">
               <tr class="product-info__row">
@@ -66,10 +69,10 @@
                 <td class="product-info__value">1000 р.</td>
               </tr>
             </table>
-            <a class="product__button regular-button" href="#">Заказать</a>
+            <a class="product__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
-            <a href="#"><img class="product__img" src="https://via.placeholder.com/85x100" width="85px" height="100px" alt="Cat Energy Pro 500 г"></a>
+            <a href="#"><img class="product__img" src="https://via.placeholder.com/85x100" alt="Cat Energy Pro 500 г"></a>
             <a href="#"><h3 class="product__titile">Cat Energy Pro 500 г</h3></a>
             <table class="product__info product-info">
               <tr class="product-info__row">
@@ -85,10 +88,10 @@
                 <td class="product-info__value">700 р.</td>
               </tr>
             </table>
-            <a class="product__button regular-button" href="#">Заказать</a>
+            <a class="product__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
-            <a href="#"><img class="product__img" src="https://via.placeholder.com/85x100" width="85px" height="100px" alt="Cat Energy Pro 1000 г"></a>
+            <a href="#"><img class="product__img" src="https://via.placeholder.com/85x100" alt="Cat Energy Pro 1000 г"></a>
             <a href="#"><h3 class="product__titile">Cat Energy Pro 1000 г</h3></a>
             <table class="product__info product-info">
               <tr class="product-info__row">
@@ -104,10 +107,10 @@
                 <td class="product-info__value">1000 р.</td>
               </tr>
             </table>
-            <a class="product__button regular-button" href="#">Заказать</a>
+            <a class="product__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
-            <a href="#"><img class="product__img" src="https://via.placeholder.com/85x100" width="85px" height="100px" alt="Cat Energy Slim 500 г"></a>
+            <a href="#"><img class="product__img" src="https://via.placeholder.com/85x100" alt="Cat Energy Slim 500 г"></a>
             <a href="#"><h3 class="product__titile">Cat Energy Slim 500 г</h3></a>
             <table class="product__info product-info">
               <tr class="product-info__row">
@@ -123,10 +126,10 @@
                 <td class="product-info__value">400 р.</td>
               </tr>
             </table>
-            <a class="product__button regular-button" href="#">Заказать</a>
+            <a class="product__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
-            <a href="#"><img class="product__img" src="https://via.placeholder.com/85x100" width="85px" height="100px" alt="Cat Energy Slim 1000 г"></a>
+            <a href="#"><img class="product__img" src="https://via.placeholder.com/85x100" alt="Cat Energy Slim 1000 г"></a>
             <a href="#"><h3 class="product__titile">Cat Energy Slim 1000 г</h3></a>
             <table class="product__info product-info">
               <tr class="product-info__row">
@@ -142,10 +145,10 @@
                 <td class="product-info__value">700 р.</td>
               </tr>
             </table>
-            <a class="product__button regular-button" href="#">Заказать</a>
+            <a class="product__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
-            <a href="#"><img class="product__img" src="https://via.placeholder.com/85x100" width="85px" height="100px" alt="Cat Energy Slim 500 г"></a>
+            <a href="#"><img class="product__img" src="https://via.placeholder.com/85x100" alt="Cat Energy Slim 500 г"></a>
             <a href="#"><h3 class="product__titile">Cat Energy Slim 500 г</h3></a>
             <table class="product__info product-info">
               <tr class="product-info__row">
@@ -161,63 +164,52 @@
                 <td class="product-info__value">500 р.</td>
               </tr>
             </table>
-            <a class="product__button regular-button" href="#">Заказать</a>
+            <a class="product__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item special-item">
-            <a class="special-item__link special-item__link--logo" href="#"><h3 class="special-item__titile">Показать еще 100500 товаров</h3></a>
+            <h3 class="special-item__title special-item__title--logo">Показать еще 100500 товаров</h3>
             <p class="special-item__text">На самом деле вкусов гораздо больше!</p>
-            <a class="product__button regular-button" href="#">Показать все</a>
+            <a class="product__button button" href="#">Показать все</a>
           </li>
         </ul>
       </section>
       <section class="additional-goods">
-        <div class="section-title">
-          <div class="section-title__line section-title__line--left"></div>
-          <h2 class="section-title__text">Дополнительные товары</h2>
-          <div class="section-title__line section-title__line--right"></div>
-        </div>
+        <h2 class="section-title">Дополнительные товары</h2>
         <ul class="additional-goods__list">
           <li class="additional-goods__item additional-product">
             <h3 class="additional-product__title">Сахарозаменитель</h3>
-            <table class="additional-product__info">
-              <tr>
-                <td class="additional-product__measure">1 упаковка (100 г)</td>
-                <td class="additional-product__cost">200 р.</td>
-              </tr>
-            </table>
-            <a class="additional-product__button regular-button" href="#">Заказать</a>
+            <dl class="additional-product__info">
+                <dt class="additional-product__measure">1 упаковка (100 г)</dt>
+                <dd class="additional-product__cost">200 р.</dd>
+            </dl>
+            <a class="additional-product__button button" href="#">Заказать</a>
           </li>
           <li class="additional-goods__item additional-product">
             <h3 class="additional-product__title">Питьевая вода</h3>
-            <table class="additional-product__info">
-              <tr>
-                <td class="additional-product__measure">5 литров</td>
-                <td class="additional-product__cost">50 р.</td>
-              </tr>
-            </table>
-            <a class="additional-product__button regular-button" href="#">Заказать</a>
+            <dl class="additional-product__info">
+                <dt class="additional-product__measure">5 литров</dt>
+                <dd class="additional-product__cost">50 р.</dd>
+            </dl>
+            <a class="additional-product__button button" href="#">Заказать</a>
           </li>
           <li class="additional-goods__item additional-product">
             <h3 class="additional-product__title">Молоко</h3>
-            <table class="additional-product__info">
-              <tr>
-                <td class="additional-product__measure">1 литр</td>
-                <td class="additional-product__cost">100 р.</td>
-              </tr>
-            </table>
-            <a class="additional-product__button regular-button" href="#">Заказать</a>
+            <dl class="additional-product__info">
+                <dt class="additional-product__measure">1 литр</dt>
+                <dd class="additional-product__cost">100 р.</dd>
+            </dl>
+            <a class="additional-product__button button" href="#">Заказать</a>
           </li>
           <li class="additional-goods__item additional-product">
             <h3 class="additional-product__title">Витамины</h3>
-            <table class="additional-product__info">
-              <tr>
-                <td class="additional-product__measure">1 упаковка (30 г)</td>
-                <td class="additional-product__cost">300 р.</td>
-              </tr>
-            </table>
-            <a class="additional-product__button regular-button" href="#">Заказать</a>
+            <dl class="additional-product__info">
+                <dt class="additional-product__measure">1 упаковка (30 г)</dt>
+                <dd class="additional-product__cost">300 р.</dd>
+            </dl>
+            <a class="additional-product__button button" href="#">Заказать</a>
           </li>
         </ul>
+        <!-- Ниже попробуй сделать без дополнительной обертки -->
         <div class="additional-goods__promo additional-promo">
           <p class="additional-promo__text additional-promo__text--icon">Закажите все и получите чехол для кота в подарок!</p>
         </div>
@@ -229,9 +221,11 @@
         <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <img class="page-footer__map" src="https://via.placeholder.com/320x362" width="320px" height="362px" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      <img class="page-footer__map" src="img/location.jpg" width="320px" height="362px" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       <div class="page-footer__bottom footer-bottom">
-        <a class="logo-title"><b>Cat </b>Energy</a>
+        <a class="page-footer__logo">
+          <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Кэт энерджи">
+        </a>
         <ul class="footer-bottom__socials socials">
           <li class="socials__item">
             <a class="socials__link socials__link--vkontakte" href="https://vk.com/">ВКонтакте</a>
