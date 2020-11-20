@@ -36,15 +36,15 @@
           <legend class="visually-hidden">Параметры кота</legend>
           <div class="text-control">
             <label class="form__label text-control__label" for="cat-name">Имя:*</label>
-            <input class="form__input" id="cat-name" type="text" name="cat-name" value="Барсик" required>
+            <input class="form__input text-control__input" id="cat-name" type="text" name="cat-name" value="Барсик" required>
           </div>
           <div class="text-control">
             <label class="form__label text-control__label" for="cat-weight">Вес (кг):*</label>
-            <input class="form__input" id="cat-weight" type="text" name="cat-weight" value="7" required>
+            <input class="form__input text-control__input" id="cat-weight" type="text" name="cat-weight" value="7" required>
           </div>
           <div class="text-control">
             <label class="form__label text-control__label" for="cat-age">Возраст (лет):</label>
-            <input class="form__input" id="cat-age" type="text" name="cat-age" value="7">
+            <input class="form__input text-control__input" id="cat-age" type="text" name="cat-age" value="7">
           </div>
         </fieldset>
         <fieldset class="form__fieldset">
@@ -66,37 +66,37 @@
           <legend class="form__legend form__legend--stripes">Контактные данные (владельца кота)</legend>
           <div class="contact-control">
             <label class="form__label contact-control__label" for="email">E-mail:*</label>
-            <input class="form__input" id="email" type="email" name="owner-email" value="kuklachev@gmail.com" required>
+            <input class="form__input contact-control__input" id="email" type="email" name="owner-email" value="kuklachev@gmail.com" required>
           </div>
           <div class="contact-control">
             <label class="form__label contact-control__label" for="tel">Телефон:*</label>
-            <input class="form__input" id="tel" type="tel" name="owner-tel" value="8 (960) 900-60-90" required>
+            <input class="form__input contact-control__input" id="tel" type="tel" name="owner-tel" value="8 (960) 900-60-90" required>
           </div>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend form__legend--stripes">Комментарий</legend>
-          <textarea class="form-input" rows="5" name="comment">Расскажите обо всех повадках кота</textarea>
+          <textarea class="form__input form__textarea--style" rows="5" name="comment">Расскажите обо всех повадках кота</textarea>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend form__legend--stripes">Дополнительно</legend>
           <div class="checkbox-control">
-            <input class="form__input" type="checkbox" id="sugar-substitute" name="sugar-substitute" checked>
+            <input class="form__checkbox" type="checkbox" id="sugar-substitute" name="sugar-substitute" checked>
             <label class="form__label checkbox-control__label" for="sugar-substitute">Сахарозаменитель</label>
           </div>
           <div class="checkbox-control">
-            <input class="form__input" type="checkbox" id="water" name="water">
+            <input class="form__checkbox" type="checkbox" id="water" name="water">
             <label class="form__label checkbox-control__label" for="water">Питьевая вода</label>
           </div>
           <div class="checkbox-control">
-            <input class="form__input" type="checkbox" id="milk" name="milk">
+            <input class="form__checkbox" type="checkbox" id="milk" name="milk">
             <label class="form__label checkbox-control__label" for="milk">Молоко</label>
           </div>
           <div class="checkbox-control">
-            <input class="form__input" type="checkbox" id="vitamins" name="vitamins">
+            <input class="form__checkbox" type="checkbox" id="vitamins" name="vitamins">
             <label class="form__label checkbox-control__label" for="vitamins">Витамины</label>
           </div>
         </fieldset>
-        <button type="submit">Отправить заявку</button>
+        <button class="button" type="submit">Отправить заявку</button>
         <p class="form__footnote">* — Обязательные поля</p>
       </form>
     </main>
