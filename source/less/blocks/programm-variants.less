@@ -4,11 +4,25 @@
 }
 
 .programm-variants__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+@media (min-width: @desktop-width) {
+  .programm-variants__list {
+    display: flex;
+  }
 }
 
 .programm-variants__item {
   background-color: @basic_grey;
+}
+
+@media (min-width: @desktop-width) {
+  .programm-variants__item:not(:last-child) {
+    margin-right: 80px;
+  }
 }
 
 .programm-variants__title {
@@ -22,6 +36,12 @@
 .programm-variants__description {
   color: @special_dark-grey;
   border-bottom: 1px solid @special_border-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .programm-variants__description{
+    border: none;
+  }
 }
 
 .programm-variants__link {

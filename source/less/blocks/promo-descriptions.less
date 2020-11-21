@@ -11,7 +11,29 @@
 }
 
 .promo-descriptions__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .promo-descriptions__list{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 125px;
+  }
+}
+
+.promo-descriptions__item {
+  outline: 2px solid @outline-2;
+  outline-offset: -2px;
+}
+
+@media (min-width: @tablet-width) {
+  .promo-descriptions__item {
+    width: 250px;
+    min-height: 280px;
+  }
 }
 
 .promo-descriptions__text {

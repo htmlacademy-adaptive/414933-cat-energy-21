@@ -2,3 +2,22 @@
   outline: 2px solid @outline-1;
   outline-offset: -2px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__toggle {
+    display: none;
+  }
+}
