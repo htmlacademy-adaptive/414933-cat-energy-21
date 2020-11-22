@@ -6,6 +6,15 @@
   text-transform: uppercase;
 }
 
+@media (min-width: @desktop-width) {
+  .page-nav {
+    width: 50%;
+    background-image: linear-gradient(@special_mask-gradient, @special_mask-gradient), url("../../img/index-background-desktop\ 1.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
 .page-nav__list {
   margin: 0;
   padding: 0;
@@ -15,6 +24,12 @@
 @media (min-width: @tablet-width) {
   .page-nav__list {
     display: flex;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-nav__list {
+    justify-content: center;
   }
 }
 
@@ -45,5 +60,11 @@
 
   &:active {
     opacity: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-nav__link {
+    color: @basic_white;
   }
 }

@@ -10,6 +10,14 @@
   }
 }
 
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    min-height: 696px;
+    margin-bottom: -610px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-header__toggle {
     display: none;
@@ -19,5 +27,15 @@
 @media (min-width: @desktop-width) {
   .page-header__toggle {
     display: none;
+  }
+}
+
+.page-header__logo-wrapper {
+  .outline(fuchsia);
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo-wrapper {
+    width: 50%;
   }
 }

@@ -21,3 +21,10 @@
 
 @outline-1: tomato;
 @outline-2: fuchsia;
+
+// Mixins
+
+.outline(@value) {
+  outline: 2px solid @value;
+  outline-offset: -2px;
+}

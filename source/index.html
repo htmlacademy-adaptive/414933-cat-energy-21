@@ -34,14 +34,12 @@
     <main class="page-main">
       <h1 class="visually-hidden">Питание для котов Cat Energy</h1>
       <section class="promo">
-        <div class="promo__wrapper">
           <div class="promo__intro">
             <h2 class="promo__title">Функциональное питание для котов</h2>
             <p class="promo__text">Занялся собой? Займись котом!</p>
           </div>
           <img class="promo__image" src="https://via.placeholder.com/280x270" alt="Банка корма с курицей">
           <a class="promo__button button" href="#">Подобрать программу</a>
-        </div>
       </section>
       <section class="programm-variants">
         <div class="programm-variants__wrapper">
@@ -83,17 +81,19 @@
         <div class="living-example__wrapper">
           <h2 class="living-example__title">Живой пример</h2>
           <p class="living-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <dl class="living-example__parameters">
-            <div class="living-example__parameter">
-              <dt class="living-example__value">5 кг</dt>
-              <dd class="living-example__description">снижение веса</dd>
-            </div>
-            <div class="living-example__parameter">
-              <dt class="living-example__value">60 дней</dt>
-              <dd class="living-example__description">затрачено времени</dd>
-            </div>
-          </dl>
-          <p class="living-example__cost">Затраты на питание: 15 000 руб.</p>
+          <div class="living-example__positioner">
+            <dl class="living-example__parameters">
+              <div class="living-example__parameter">
+                <dt class="living-example__value">5 кг</dt>
+                <dd class="living-example__description">снижение</br> веса</dd>
+              </div>
+              <div class="living-example__parameter">
+                <dt class="living-example__value">60 дней</dt>
+                <dd class="living-example__description">затрачено</br> времени</dd>
+              </div>
+            </dl>
+            <p class="living-example__cost">Затраты на питание: 15 000 руб.</p>
+          </div>
           <div class="living-example__slider slider">
             <img class="slider__image slider__image--show" src="https://via.placeholder.com/311x232" alt="Толстый кот Борис">
             <img class="slider__image" src="https://via.placeholder.com/251x240" alt="Худой кот Борис">
@@ -107,12 +107,14 @@
       </section>
     </main>
     <footer class="page-footer">
-      <h2 class="visually-hidden">Контакты</h2>
-      <div class="page-footer__contacts page-footer__contacts--home contacts">
-        <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="page-footer__top">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="page-footer__contacts page-footer__contacts--home contacts">
+          <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <img class="page-footer__map" src="img/location.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </div>
-      <img class="page-footer__map" src="img/location.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       <div class="page-footer__bottom footer-bottom">
         <a class="page-footer__logo">
           <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Кэт энерджи">
