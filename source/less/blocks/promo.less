@@ -1,6 +1,10 @@
 .promo {
   .outline(fuchsia);
-  min-height: 420px;
+  text-align: center;
+  color: @basic_white;
+  background-image: linear-gradient(@special_mask-gradient, @special_mask-gradient), url("../../img/index-background-desktop\ 2.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 @media (min-width: @tablet-width) {
@@ -16,25 +20,29 @@
 }
 
 .promo__intro {
-  .outline(fuchsia);
   min-height: 300px;
-  color: @basic_white;
-  text-align: center;
-  background-image: linear-gradient(@special_mask-gradient, @special_mask-gradient), url("../../img/index-background-desktop\ 2.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: @basic_green;
 }
 
-@media (min-width: @tablet-width) {
-  .promo__intro {
-    min-height: auto;
-    color: @basic_black;
-    text-align: left;
-    background-image: none;
-    background-color: transparent;
-  }
-}
+// .promo__intro {
+//   .outline(fuchsia);
+//   min-height: 300px;
+//   color: @basic_white;
+//   text-align: center;
+//   background-image: linear-gradient(@special_mask-gradient, @special_mask-gradient), url("../../img/index-background-desktop\ 2.jpg");
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-color: @basic_green;
+// }
+
+// @media (min-width: @tablet-width) {
+//   .promo__intro {
+//     min-height: auto;
+//     color: @basic_black;
+//     text-align: left;
+//     background-image: none;
+//     background-color: transparent;
+//   }
+// }
 
 .promo__title {
   font-family: "Oswald", "Arial", sans-serif;
@@ -50,9 +58,35 @@
   text-transform: uppercase;
 }
 
+.promo__image-wrapper {
+  .outline(green);
+  position: relative;
+  height: 135px;
+  background-color: @basic_white;
+}
+
+@media (min-width: @desktop-width) {
+  .promo__image-wrapper {
+    width: 50%;
+    min-height: 695px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: auto;
+    background-color: @basic_green;
+    background-image: linear-gradient(@special_mask-gradient, @special_mask-gradient), url("../../img/index-background-desktop\ 1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.promo__image {
+  position: absolute;
+  top: -160px;
+  left: 20px;
+}
+
 @media (min-width: @tablet-width) {
   .promo__image {
-    position: absolute;
     top: 90px;
     z-index: -1;
   }
@@ -65,6 +99,15 @@
     right: 35%;
     z-index: 0;
   }
+}
+
+.promo__button-wrapper {
+  background-color: @basic_white;
+}
+
+.promo__button {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 @media (min-width: @tablet-width) {
