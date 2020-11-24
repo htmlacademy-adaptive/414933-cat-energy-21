@@ -1,5 +1,11 @@
 .page-header {
   .outline(@outline-1);
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -8,14 +14,16 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-  .page-header__toggle {
-    display: none;
-  }
-}
-
 .page-header__logo-wrapper {
-  .outline(fuchsia);
+  margin: 0 auto;
+  padding: 0 20px;
+  border-bottom: 1px solid @special_border-grey-4;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 29px;
+    padding: 0;
+    border: none;
+  }
 }
 
 @media (min-width: @desktop-width) {

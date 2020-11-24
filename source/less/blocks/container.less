@@ -1,11 +1,9 @@
 .container {
   margin: 0 auto;
   padding: 0 20px;
-}
 
-@media (min-width: @tablet-width) {
-  .container {
-    max-width: 710px;
+  @media (min-width: @tablet-width) {
+    margin: 0 29px;
     padding: 0;
   }
 }
@@ -13,12 +11,5 @@
 @media (min-width: @desktop-width) {
   .container {
     max-width: 1220px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .container--header {
-    display: flex;
-    justify-content: space-between;
   }
 }
