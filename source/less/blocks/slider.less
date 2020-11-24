@@ -20,6 +20,7 @@
 }
 
 .slider__image {
+  margin: 0 auto;
   display: none;
 }
 
@@ -38,6 +39,11 @@
   font-size: 16px;
   line-height: 20/16;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+  }
 }
 
 .slider__control-bar {
