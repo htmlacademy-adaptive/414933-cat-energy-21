@@ -1,6 +1,18 @@
 .contacts {
   // .outline(fuchsia);
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: @basic_white;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 71px;
+    padding-right: 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    box-sizing: border-box;
+  }
 }
 
 .contacts__slogan {
