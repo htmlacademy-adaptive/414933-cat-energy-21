@@ -14,9 +14,9 @@
 
   @media (min-width: @desktop-width) {
     width: 50%;
-    height: 143px;
     font-size: 20px;
     line-height: 1;
+    z-index: 1;
   }
 }
 
@@ -67,6 +67,16 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: @desktop-width) {
+    color: @basic_white;
+  }
+}
+
+.page-nav__link--inner {
+  @media (min-width: @desktop-width) {
+    color: @basic_black;
+  }
 }
 
 .page-nav__link--current {
@@ -82,11 +92,5 @@
 
   @media (min-width: @tablet-width) {
     border-bottom: 2px solid @basic_green;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-nav__link {
-    color: @basic_white;
   }
 }

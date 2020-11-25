@@ -20,13 +20,13 @@
       <nav class="page-nav">
         <ul class="page-nav__list">
           <li class="page-nav__item">
-            <a class="page-nav__link" href="index.html">Главная</a>
+            <a class="page-nav__link page-nav__link--inner" href="index.html">Главная</a>
           </li>
           <li class="page-nav__item">
-            <a class="page-nav__link" href="catalog.html">Каталог продукции</a>
+            <a class="page-nav__link page-nav__link--inner" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="page-nav__item">
-            <a class="page-nav__link page-nav__link--current">Подбор программы</a>
+            <a class="page-nav__link page-nav__link--inner page-nav__link--current">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -35,7 +35,7 @@
       <h1 class="page-main__title">Подбор программы</h1>
       <p class="page-main__description">Заполните анкету, и мы подберем</br> программу питания для вашего кота</p>
       <form class="page-main__form form" action="https://echo.htmlacademy.ru/courses" method="get">
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--text">
           <legend class="visually-hidden">Параметры кота</legend>
           <div class="text-control">
             <label class="form__label text-control__label" for="cat-name">Имя:*</label>
@@ -50,7 +50,7 @@
             <input class="form__input text-control__input" id="cat-age" type="text" name="cat-age" value="7">
           </div>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--radio">
           <legend class="visually-hidden">Выбор программы</legend>
           <div class="radio-control">
             <input class="form__radio" id="lose-weight" type="radio" name="programm" value="lose-weight" checked>
@@ -67,20 +67,22 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend form__legend--stripes">Контактные данные (владельца кота)</legend>
-          <div class="contact-control">
-            <label class="form__label contact-control__label" for="email">E&#8209mail:*</label>
-            <input class="form__input contact-control__input" id="email" type="email" name="owner-email" value="kuklachev@gmail.com" required>
-          </div>
-          <div class="contact-control">
-            <label class="form__label contact-control__label" for="tel">Телефон:*</label>
-            <input class="form__input contact-control__input" id="tel" type="tel" name="owner-tel" value="8 (960) 900-60-90" required>
+          <div class="contact-control-wrapper">
+            <div class="contact-control">
+              <label class="form__label contact-control__label" for="email">E&#8209mail:*</label>
+              <input class="form__input contact-control__input" id="email" type="email" name="owner-email" value="kuklachev@gmail.com" required>
+            </div>
+            <div class="contact-control">
+              <label class="form__label contact-control__label" for="tel">Телефон:*</label>
+              <input class="form__input contact-control__input" id="tel" type="tel" name="owner-tel" value="8 (960) 900-60-90" required>
+            </div>
           </div>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend form__legend--stripes">Комментарий</legend>
           <textarea class="form__textarea form__textarea--style" rows="5" name="comment">Расскажите обо всех повадках кота</textarea>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset-checkbox">
           <legend class="form__legend form__legend--stripes">Дополнительно</legend>
           <div class="checkbox-control">
             <input class="form__checkbox" type="checkbox" id="sugar-substitute" name="sugar-substitute" checked>
@@ -112,7 +114,7 @@
           </div>
           <img class="page-footer__map" src="img/location.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </div>
-      <div class="page-footer__bottom footer-bottom">
+      <div class="page-footer__bottom footer-bottom container">
         <a class="page-footer__logo">
           <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Кэт энерджи">
         </a>
