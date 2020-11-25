@@ -1,4 +1,4 @@
-// Global
+// Fonts
 
 @font-face {
   font-family: "Oswald";
@@ -14,7 +14,16 @@
   font-style: normal;
 }
 
+// Media
+
+@tablet-width: 768px;
+@desktop-width: 1440px;
+
+// Global
+
 body {
+  min-width: 320px;
+  margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18/14;
@@ -24,6 +33,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .button {

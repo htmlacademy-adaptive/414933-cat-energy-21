@@ -5,15 +5,92 @@
   outline-offset: -2px;
 }
 
+@media (min-width: @tablet-width) {
+  .living-example {
+    background-color: @basic_white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .living-example__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+}
+
 .living-example__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40/36;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }
 
 .living-example__text {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18/14;
   color: @special_dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24/16;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: @basic_grey;
+  }
+}
+
+.living-example__positioner {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: block;
+    background-color: @basic_grey;
+  }
+}
+
+.living-example__parameters {
+  .outline(tomato);
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: @desktop-width) {
+  .living-example__parameters {
+    justify-content: left;
+  }
+}
+
+.living-example__parameter {
+  .outline(fuchsia);
+  min-width: 125px;
 }
 
 .living-example__value {
@@ -21,17 +98,42 @@
   font-size: 24px;
   line-height: 1;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37/30;
+  }
 }
 
 .living-example__description {
+  margin: 0;
   font-size: 12px;
   line-height: 1;
+  text-align: center;
   color: @special_dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+  }
 }
 
 .living-example__cost {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20/14;
+  text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .living-example__cost {
+    text-align: left;
+  }
 }

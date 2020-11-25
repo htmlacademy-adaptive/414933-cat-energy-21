@@ -4,8 +4,26 @@
   outline-offset: -2px;
 }
 
-.page-footer__contacts--home {
-  background-color: @basic_white;
+@media (min-width: @desktop-width) {
+  .page-footer__top {
+    position: relative;
+  }
+}
+
+.page-footer__contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__contacts {
+    width: 570px;
+    position: absolute;
+  }
+}
+
+.page-footer__map {
+  text-align: center;
 }
 
 .page-footer__bottom {
@@ -13,6 +31,19 @@
   outline-offset: -2px;
 }
 
+@media (min-width: @tablet-width) {
+  .page-footer__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .page-footer__logo {
   border-bottom: 1px solid @special_border-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__logo {
+    border: none;
+  }
 }
