@@ -21,31 +21,34 @@
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 125px;
-    row-gap: 35px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    column-gap: 80px;
-    row-gap: 35px;
+    justify-content: space-between;
   }
 }
 
 .promo-descriptions__item {
-  outline: 2px solid @outline-2;
-  outline-offset: -2px;
+  .outline(tomato);
 
   @media (min-width: @tablet-width) {
+    width: 35%;
+    margin-right: 105px;
+    margin-bottom: 37px;
+    padding-top: 150px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
     width: 250px;
-    min-height: 280px;
+    margin: 0;
   }
 }
 
 .promo-descriptions__text {
+  margin: 0;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   color: @special_dark-grey;

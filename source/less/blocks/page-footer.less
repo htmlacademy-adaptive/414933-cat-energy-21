@@ -1,11 +1,10 @@
 .page-footer {
+  // .outline(tomato);
   background-color: @basic_grey;
-  outline: 2px solid @outline-1;
-  outline-offset: -2px;
 }
 
-@media (min-width: @desktop-width) {
-  .page-footer__top {
+.page-footer__top {
+  @media (min-width: @desktop-width) {
     position: relative;
   }
 }
@@ -24,11 +23,6 @@
 
 .page-footer__map {
   text-align: center;
-}
-
-.page-footer__bottom {
-  outline: 2px solid @outline-1;
-  outline-offset: -2px;
 }
 
 @media (min-width: @tablet-width) {
