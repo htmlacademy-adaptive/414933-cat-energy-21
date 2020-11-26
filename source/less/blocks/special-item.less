@@ -1,5 +1,13 @@
 .special-item {
+  .outline(tomato);
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    flex: 1 0 324px;
+    margin-bottom: 60px;
+    margin-left: 60px;
+  }
 }
 
 .special-item__title {
@@ -11,6 +19,13 @@
   line-height: 20/16;
   color: @special_black;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 234px;
+    padding-bottom: 23px;
+    font-size: 20px;
+    line-height: 22/20;
+  }
 }
 
 .special-item__text {
@@ -20,6 +35,14 @@
   font-size: 12px;
   line-height: 16/12;
   color: @special_dark-grey;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 87px;
+    padding-left: 79px;
+    padding-right: 78px;
+    font-size: 16px;
+    line-height: 18/16;
+  }
 }
 
 .special-item__button {
@@ -27,4 +50,9 @@
   margin: 0 auto;
   color: @special_dark-grey;
   background-color: @basic_grey;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }

@@ -7,6 +7,12 @@
   padding-top: 28px;
   padding-bottom: 35px;
   border-bottom: 1px solid @special_grey-2;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 400;
+  }
 }
 
 .additional-goods__list {
@@ -14,6 +20,10 @@
   margin-bottom: 39px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @special_grey-2;
+  }
 }
 
 .additional-goods__promo {
@@ -31,4 +41,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: @basic_green;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 423px;
+    padding-right: 124px;
+    text-align: left;
+  }
 }

@@ -40,6 +40,12 @@ img {
   height: auto;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .button {
   display: block;
   font-family: "Oswald", "Arial", sans-serif;
@@ -72,6 +78,11 @@ img {
   line-height: 1;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    line-height: 20/16;
+  }
 }
 
 // Visually hidden

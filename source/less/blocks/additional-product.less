@@ -2,6 +2,14 @@
   // .outline(fuchsia);
   padding-bottom: 20px;
   border-bottom: 1px solid @special_grey-2;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 28px;
+  }
 }
 
 .additional-product__title {
@@ -13,6 +21,13 @@
   line-height: 1;
   color: @special_dark-grey-2;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+    flex-basis: 40%;
+    font-size: 20px;
+    line-height: 1;
+  }
 }
 
 .additional-product__info {
@@ -21,9 +36,20 @@
   font-family: "Arial", sans-serif;
   line-height: 1;
   color: @special_dark-grey;
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+    justify-content: flex-end;
+    flex-basis: 40%;
+    line-height: 20/16;
+  }
 }
 
 .additional-product__button {
   padding-top: 7px;
   padding-bottom: 7px;
+
+  @media (min-width: @tablet-width) {
+    flex-basis: 100%;
+  }
 }
