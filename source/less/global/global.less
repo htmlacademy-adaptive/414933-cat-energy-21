@@ -53,8 +53,18 @@ img {
 }
 
 .button--form {
+  width: 280px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   font-size: 16px;
   line-height: 20/16;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    margin-right: 60px;
+    font-size: 20px;
+    line-height: 1;
+  }
 }
 
 .button--catalog {
