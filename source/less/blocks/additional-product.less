@@ -1,10 +1,13 @@
 .additional-product {
+  // .outline(fuchsia);
+  padding-bottom: 20px;
   border-bottom: 1px solid @special_grey-2;
-  outline: 2px solid @outline-2;
-  outline-offset: -2px;
 }
 
 .additional-product__title {
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
@@ -13,7 +16,14 @@
 }
 
 .additional-product__info {
+  display: flex;
+  justify-content: space-between;
   font-family: "Arial", sans-serif;
   line-height: 1;
   color: @special_dark-grey;
+}
+
+.additional-product__button {
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
