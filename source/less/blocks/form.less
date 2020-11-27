@@ -29,9 +29,13 @@
   }
 }
 
+.form__fieldset-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .form__fieldset--text {
   @media (min-width: @desktop-width) {
-    display: inline-block;
     width: 570px;
     margin-right: 80px;
   }
@@ -39,7 +43,6 @@
 
 .form__fieldset--radio {
   @media (min-width: @desktop-width) {
-    display: inline-block;
     max-width: 525px;
     padding: 0;
   }
@@ -78,11 +81,15 @@
   padding-bottom: 25px;
 
   @media (min-width: @tablet-width) {
-    width: 35%;
-    margin-right: 90px;
+    // width: 35%;
+    // margin-right: 90px;
+    flex-grow: 1;
+    flex-basis: 40%;
   }
 
   @media (min-width: @desktop-width) {
+    flex-grow: 0;
+    flex-basis: auto;
     width: 221px;
     margin-right: 0;
   }
@@ -139,13 +146,21 @@
   }
 }
 
+.form__bottom-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
 .form__footnote {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16/14;
   text-align: center;
-
-  @media (min-width: @tablet-width) {
-    display: inline-block;
-  }
 }

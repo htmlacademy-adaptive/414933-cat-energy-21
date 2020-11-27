@@ -35,36 +35,38 @@
       <h1 class="page-main__title">Подбор программы</h1>
       <p class="page-main__description">Заполните анкету, и мы подберем</br> программу питания для вашего кота</p>
       <form class="page-main__form form" action="https://echo.htmlacademy.ru/courses" method="get">
-        <fieldset class="form__fieldset form__fieldset--text">
-          <legend class="visually-hidden">Параметры кота</legend>
-          <div class="text-control">
-            <label class="form__label text-control__label" for="cat-name">Имя:*</label>
-            <input class="form__input text-control__input" id="cat-name" type="text" name="cat-name" value="Барсик" required>
-          </div>
-          <div class="text-control">
-            <label class="form__label text-control__label" for="cat-weight">Вес (кг):*</label>
-            <input class="form__input text-control__input" id="cat-weight" type="text" name="cat-weight" value="7" required>
-          </div>
-          <div class="text-control">
-            <label class="form__label text-control__label" for="cat-age">Возраст (лет):</label>
-            <input class="form__input text-control__input" id="cat-age" type="text" name="cat-age" value="7">
-          </div>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--radio">
-          <legend class="visually-hidden">Выбор программы</legend>
-          <div class="radio-control">
-            <input class="form__radio" id="lose-weight" type="radio" name="programm" value="lose-weight" checked>
-            <label class="form__label radio-control__label" for="lose-weight">Похудение</label>
-          </div>
-          <div class="radio-control">
-            <input class="form__radio" id="mass-grow" type="radio" name="programm" value="mass-grow">
-            <label class="form__label radio-control__label" for="mass-grow">Набор массы</label>
-          </div>
-          <div class="radio-control">
-            <input class="form__radio" id="need-help" type="radio" name="programm" value="need-help">
-            <label class="form__label radio-control__label" for="need-help">Не знаю (Нужен ваш совет)</label>
-          </div>
-        </fieldset>
+        <div class="form__fieldset-wrapper">
+          <fieldset class="form__fieldset form__fieldset--text">
+            <legend class="visually-hidden">Параметры кота</legend>
+            <div class="text-control">
+              <label class="form__label text-control__label" for="cat-name">Имя:*</label>
+              <input class="form__input text-control__input" id="cat-name" type="text" name="cat-name" value="Барсик" required>
+            </div>
+            <div class="text-control">
+              <label class="form__label text-control__label" for="cat-weight">Вес (кг):*</label>
+              <input class="form__input text-control__input" id="cat-weight" type="text" name="cat-weight" value="7" required>
+            </div>
+            <div class="text-control">
+              <label class="form__label text-control__label" for="cat-age">Возраст (лет):</label>
+              <input class="form__input text-control__input" id="cat-age" type="text" name="cat-age" value="7">
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--radio">
+            <legend class="visually-hidden">Выбор программы</legend>
+            <div class="radio-control">
+              <input class="form__radio" id="lose-weight" type="radio" name="programm" value="lose-weight" checked>
+              <label class="form__label radio-control__label" for="lose-weight">Похудение</label>
+            </div>
+            <div class="radio-control">
+              <input class="form__radio" id="mass-grow" type="radio" name="programm" value="mass-grow">
+              <label class="form__label radio-control__label" for="mass-grow">Набор массы</label>
+            </div>
+            <div class="radio-control">
+              <input class="form__radio" id="need-help" type="radio" name="programm" value="need-help">
+              <label class="form__label radio-control__label" for="need-help">Не знаю (Нужен ваш совет)</label>
+            </div>
+          </fieldset>
+        </div>
         <fieldset class="form__fieldset">
           <legend class="form__legend form__legend--stripes">Контактные данные (владельца кота)</legend>
           <div class="form__contact-wrapper">
@@ -101,8 +103,10 @@
             <label class="form__label checkbox-control__label" for="vitamins">Витамины</label>
           </div>
         </fieldset>
-        <button class="button button--form" type="submit">Отправить заявку</button>
-        <p class="form__footnote">* — Обязательные поля</p>
+        <div class="form__bottom-wrapper">
+          <button class="button button--form" type="submit">Отправить заявку</button>
+          <p class="form__footnote">* — Обязательные поля</p>
+        </div>
       </form>
     </main>
     <footer class="page-footer">
