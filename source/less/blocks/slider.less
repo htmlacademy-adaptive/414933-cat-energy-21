@@ -1,16 +1,11 @@
 .slider {
-  outline: 2px solid @outline-1;
-  outline-offset: -2px;
-}
+  margin: 0 auto;
 
-@media (min-width: @tablet-width) {
-  .slider {
+  @media (min-width: @tablet-width) {
     background-color: @special_bg-grey;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .slider {
+  @media (min-width: @desktop-width) {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -29,7 +24,7 @@
 }
 
 .slider__controls {
-  .outline(fuchsia);
+  // .outline(fuchsia);
   display: flex;
   justify-content: space-around;
 }
@@ -53,10 +48,8 @@
   border-radius: 6px;
   background-color: @basic_white;
   align-self: center;
-}
 
-@media (min-width: @tablet-width) {
-  .slider__control-bar {
+  @media (min-width: @tablet-width) {
     width: 428px;
     height: 6px;
     border: none;

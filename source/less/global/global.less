@@ -40,6 +40,12 @@ img {
   height: auto;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .button {
   display: block;
   font-family: "Oswald", "Arial", sans-serif;
@@ -54,22 +60,22 @@ img {
 
 .button--form {
   width: 280px;
+  padding: 0;
   padding-top: 7px;
   padding-bottom: 7px;
   font-size: 16px;
   line-height: 20/16;
 
   @media (min-width: @tablet-width) {
-    display: inline-block;
     margin-right: 60px;
     font-size: 20px;
     line-height: 1;
   }
-}
 
-.button--catalog {
-  font-size: 16px;
-  line-height: 1;
+  @media (min-width: @desktop-width) {
+    width: 568px;
+    margin-right: 80px;
+  }
 }
 
 // Visually hidden

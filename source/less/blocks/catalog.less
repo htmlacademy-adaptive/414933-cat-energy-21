@@ -1,8 +1,23 @@
 .catalog {
-  outline: 2px solid @outline-1;
-  outline-offset: -2px;
+  padding-bottom: 25px;
 }
 
 .catalog__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-template-rows: auto auto;
+    column-gap: 80px;
+    row-gap: 63px;
+  }
 }

@@ -4,19 +4,20 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    min-height: 100px;
+    // min-height: 100px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 1440px;
     height: 143px;
+    margin: 0 auto;
     margin-bottom: -143px;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding: 0 110px;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .page-header__toggle {
+.page-header__toggle {
+  @media (min-width: @tablet-width) {
     display: none;
   }
 }
@@ -33,12 +34,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-header__logo-wrapper {
     width: 50%;
+    margin: 0;
   }
 }

@@ -1,8 +1,6 @@
 .living-example {
+  // .outline(tomato);
   background-color: @special_bg-grey;
-
-  outline: 2px solid @outline-1;
-  outline-offset: -2px;
 }
 
 @media (min-width: @tablet-width) {
@@ -77,19 +75,17 @@
 }
 
 .living-example__parameters {
-  .outline(tomato);
+  // .outline(tomato);
   display: flex;
   justify-content: space-between;
-}
 
-@media (min-width: @desktop-width) {
-  .living-example__parameters {
+  @media (min-width: @desktop-width) {
     justify-content: left;
   }
 }
 
 .living-example__parameter {
-  .outline(fuchsia);
+  // .outline(fuchsia);
   min-width: 125px;
 }
 
@@ -130,10 +126,8 @@
     font-size: 20px;
     line-height: 1;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .living-example__cost {
+  @media (min-width: @desktop-width) {
     text-align: left;
   }
 }

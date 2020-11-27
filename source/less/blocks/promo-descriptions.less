@@ -1,8 +1,3 @@
-.promo-descriptions {
-  outline: 2px solid @outline-1;
-  outline-offset: -2px;
-}
-
 .promo-descriptions__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -31,18 +26,28 @@
 }
 
 .promo-descriptions__item {
-  .outline(tomato);
-
+  // .outline(tomato);
   @media (min-width: @tablet-width) {
-    width: 35%;
-    margin-right: 105px;
-    margin-bottom: 37px;
+    flex-grow: 1;
+    flex-basis: 40%;
     padding-top: 150px;
     padding-bottom: 57px;
+    padding-right: 75px;
   }
 
   @media (min-width: @desktop-width) {
+    flex-grow: 0;
+    flex-basis: auto;
     width: 250px;
+  }
+}
+
+.promo-descriptions__item:nth-child(2n) {
+  @media (min-width: @tablet-width) {
+    margin-left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
     margin: 0;
   }
 }
