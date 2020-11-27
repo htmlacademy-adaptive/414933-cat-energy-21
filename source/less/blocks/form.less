@@ -52,6 +52,13 @@
   }
 }
 
+.form__contact-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .text-control {
   padding-bottom: 13px;
   display: flex;
@@ -64,24 +71,6 @@
 
 .radio-control {
   padding-bottom: 25px;
-}
-
-.contact-control-wrapper {
-  @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.contact-control {
-  // .outline(fuchsia);
-  display: flex;
-  align-items: center;
-  width: 570px;
-}
-
-.contact-control__label {
-  margin-right: 12px;
 }
 
 .checkbox-control {

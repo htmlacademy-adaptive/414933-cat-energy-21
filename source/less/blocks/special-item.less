@@ -1,12 +1,20 @@
 .special-item {
   .outline(tomato);
   text-align: center;
+  padding-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     display: block;
-    flex: 1 0 324px;
+    flex: 1 0 40%;
     margin-bottom: 60px;
     margin-left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 40px;
   }
 }
 
@@ -26,6 +34,10 @@
     font-size: 20px;
     line-height: 22/20;
   }
+
+  @media (min-width: @desktop-width) {
+    line-height: 22/20;
+  }
 }
 
 .special-item__text {
@@ -43,16 +55,18 @@
     font-size: 16px;
     line-height: 18/16;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .special-item__button {
-  width: 280px;
-  margin: 0 auto;
+  // width: 280px;
+  // margin: 0 auto;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
   color: @special_dark-grey;
   background-color: @basic_grey;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
 }
