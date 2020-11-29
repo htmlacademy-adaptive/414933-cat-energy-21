@@ -17,15 +17,41 @@
 }
 
 .page-header__toggle {
+  position: relative;
   margin: 0;
   padding: 0;
   padding-left: 35px;
+  cursor: pointer;
   border: none;
   background-color: inherit;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.page-header__toggle--opened::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 8px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/close-menu.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.page-header__toggle--closed::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 9px;
+  width: 24px;
+  height: 20px;
+  background-image: url("../img/open-menu.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .page-header__logo-wrapper {

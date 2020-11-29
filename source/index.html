@@ -13,7 +13,9 @@
             <img class="page-header__logo-image" src="https://via.placeholder.com/34x38" width="34" height="38" alt="Логотим с изображением кота">
             <img class="page-header__logo-title" src="https://via.placeholder.com/100x18" width="100" height="20" alt="Кэт энерджи">
           </a>
-          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="page-header__toggle page-header__toggle--opened" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
         <nav class="page-nav">
           <ul class="page-nav__list">
@@ -36,7 +38,7 @@
             <h2 class="promo__title">Функциональное питание для&#160котов</h2>
             <p class="promo__text">Занялся собой? Займись котом!</p>
             <img class="promo__image" src="https://via.placeholder.com/280x270" alt="Банка корма с курицей">
-            <a class="promo__button button" href="#">Подобрать программу</a>
+            <a class="promo__button button" href="form.html">Подобрать программу</a>
           </div>
       </section>
       <section class="programm-variants">
@@ -101,7 +103,9 @@
             <div class="container">
               <div class="slider__controls">
                 <p class="slider__control-name">Было</p>
-                <div class="slider__control-bar"></div>
+                <div class="slider__control-bar">
+                  <div class="slider__control-toggle"></div>
+                </div>
                 <p class="slider__control-name">Стало</p>
               </div>
             </div>
@@ -123,16 +127,30 @@
         </a>
         <ul class="footer-bottom__socials socials">
           <li class="socials__item">
-            <a class="socials__link socials__link--vkontakte" href="https://vk.com/">ВКонтакте</a>
+            <a class="socials__link socials__link--vkontakte" href="https://vk.com/">
+              <img src="https://via.placeholder.com/23x23" alt="ВКонтакте">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--instagram" href="https://instagram.com/">Инстаграм</a>
+            <a class="socials__link socials__link--instagram" href="https://instagram.com/">
+              <img src="https://via.placeholder.com/23x23" alt="Инстаграм">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--facebook" href="https://facebook.com/">Фейсбук</a>
+            <a class="socials__link socials__link--facebook" href="https://facebook.com/">
+              <img src="https://via.placeholder.com/23x23" alt="Фэйсбук">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
           </li>
         </ul>
-        <a class="footer-bottom__copyright footer-bottom__copyright--logo" href="https://htmlacademy.ru/">HTML Academy</a>
+        <a class="footer-bottom__copyright" href="https://htmlacademy.ru/">
+          <span>HTML Academy</span>
+          <svg class="footer-bottom__copyright-logo" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
+          </svg>
+        </a>
       </div>
     </footer>
   </body>
