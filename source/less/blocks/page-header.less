@@ -17,14 +17,24 @@
 }
 
 .page-header__toggle {
+  margin: 0;
+  padding: 0;
+  padding-left: 35px;
+  border: none;
+  background-color: inherit;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
 .page-header__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 0 20px;
+  padding-top: 12px;
+  padding-bottom: 14px;
   border-bottom: 1px solid @special_border-grey-4;
 
   @media (min-width: @tablet-width) {
@@ -37,4 +47,22 @@
     width: 50%;
     margin: 0;
   }
+}
+
+.page-header__logo-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.page-header__logo-image {
+  width: 34px;
+  height: 38px;
+}
+
+.page-header__logo-title {
+  margin: 0 auto;
+  width: 101px;
+  height: 20px;
 }

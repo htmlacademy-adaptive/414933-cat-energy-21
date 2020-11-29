@@ -1,13 +1,12 @@
 .promo {
   // .outline(fuchsia);
-  padding-bottom: 12px;
+  padding-bottom: 22px;
   text-align: center;
   color: @basic_white;
   background-image: url("../../img/index-bg-mobile.jpg"), linear-gradient(@special_bg-green, @special_bg-green);
   background-size: auto 302px;
   background-repeat: no-repeat;
   background-position: top;
-  border-bottom: 3px solid @special_border-grey-3;
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -20,8 +19,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1440px;
-    margin: 0 auto;
+    // width: 1440px;
+    // margin: 0 auto;
     background-image: url("../../img/index-bg-desktop.jpg");
     background-size: 50% auto;
     background-repeat: no-repeat;
@@ -32,7 +31,7 @@
 
 .promo__title {
   margin: 0;
-  padding-top: 27px;
+  padding-top: 25px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -98,8 +97,8 @@
 
 .promo__button {
   max-width: 280px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 12px;
 
   @media (min-width: @tablet-width) {
     width: max-content;
