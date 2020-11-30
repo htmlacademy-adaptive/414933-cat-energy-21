@@ -21,7 +21,7 @@
   background-color: @basic_grey;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
+    // width: 708px;
     margin-bottom: 30px;
   }
 
@@ -46,6 +46,9 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    padding-top: 76px;
+    padding-left: 53px;
+    padding-bottom: 25px;
     font-size: 36px;
     line-height: 1;
   }
@@ -63,9 +66,23 @@
   border-bottom: 1px solid @special_border-grey;
 
   @media (min-width: @tablet-width) {
+    padding-left: 32px;
+    padding-right: 260px;
     font-size: 16px;
     line-height: 24/16;
     border: none;
+  }
+}
+
+.programm-variants__description br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: initial;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
@@ -82,6 +99,9 @@
   color: @basic_black;
 
   @media (min-width: @tablet-width) {
+    padding-top: 34px;
+    padding-left: 52px;
+    padding-bottom: 62px;
     font-size: 20px;
   }
 }
@@ -101,6 +121,11 @@
   background-image: url("../img/arow.svg");
   background-repeat: no-repeat;
   background-position: left;
+
+  @media (min-width: @tablet-width) {
+    top: 38px;
+    left: 183px;
+  }
 }
 
 .programm-variants__link:hover::after {
@@ -114,4 +139,9 @@
   background-image: url("../img/arow-hover.svg");
   background-repeat: no-repeat;
   background-position: left;
+
+  @media (min-width: @tablet-width) {
+    top: 38px;
+    left: 183px;
+  }
 }

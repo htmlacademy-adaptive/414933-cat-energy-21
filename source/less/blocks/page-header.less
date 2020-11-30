@@ -80,15 +80,25 @@
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+  }
 }
 
 .page-header__logo-image {
   width: 34px;
   height: 38px;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: 50px;
+    margin-right: 12px;
+  }
 }
 
 .page-header__logo-title {
   margin: 0 auto;
-  width: 101px;
+  width: 103px;
   height: 20px;
 }
