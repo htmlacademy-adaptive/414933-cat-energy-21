@@ -10,10 +10,25 @@
   border-bottom: 1px solid @special_border-grey;
 
   @media (min-width: @tablet-width) {
+    width: 265px;
+    padding-top: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
     border: none;
   }
 }
 
 .socials__item:not(:last-child) {
   margin-right: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 18px;
+  }
+}
+
+.socials__link img {
+  @media (min-width: @tablet-width) {
+    width: 33px;
+    height: 33px;
+  }
 }

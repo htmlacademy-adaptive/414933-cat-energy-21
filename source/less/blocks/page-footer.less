@@ -23,6 +23,11 @@
 
 .page-footer__map {
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
 }
 
 .page-footer__logo {
@@ -31,6 +36,8 @@
   border-bottom: 1px solid @special_border-grey;
 
   @media (min-width: @tablet-width) {
+    margin-right: 30px;
+    padding-top: 20px;
     border: none;
   }
 }
