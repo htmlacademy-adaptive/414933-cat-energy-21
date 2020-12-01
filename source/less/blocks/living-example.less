@@ -7,22 +7,20 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-bottom: 36px;
     background-image: linear-gradient(@basic_white 0%, @basic_white 31%, @special_bg-grey 31%, @special_bg-grey 100%);
   }
 }
 
 .living-example .container {
   @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    // grid-template-rows: min-content 1fr 1fr;
+    display: flex;
   }
 }
 
 .living-example__wrapper {
   @media (min-width: @desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 2;;
+    width: 570px;
   }
 }
 
@@ -43,11 +41,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    // grid-column-start: 1;
-    // grid-column-end: 2;
-    // grid-row-start: 1;
-    // grid-row-end: 2;
-    padding-top: 72px;
+    padding-top: 77px;
     padding-bottom: 146px;
   }
 }
@@ -69,11 +63,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    padding-right: 140px;
+    padding-right: 135px;
     padding-bottom: 0;
   }
 }
@@ -86,10 +76,6 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    // grid-column-start: 1;
-    // grid-column-end: 2;
-    // grid-row-start: 3;
-    // grid-row-end: 4;
   }
 }
 
@@ -134,9 +120,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 88px;
+    width: 128px;
+    margin-right: 75px;
+    padding-bottom: 10px;
   }
 }
+
+// .living-example__value:not()
 
 .living-example__description {
   width: 82px;
@@ -150,6 +140,10 @@
   @media (min-width: @tablet-width) {
     width: 128px;
     font-size: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
@@ -174,7 +168,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 53px;
+    padding-top: 55px;
     padding-left: 0;
     text-align: left;
   }
@@ -192,23 +186,3 @@
     padding-left: 60px;
   }
 }
-
-.living-example__slider {
-  @media (min-width: @desktop-width) {
-    grid-column-start: 2;
-    grid-column-end: 3;
-//     grid-row-start: 1;
-//     grid-row-end: 4;
-  }
-}
-
-// .living-example__cost br {
-//   display: none;
-//   @media (min-width: @tablet-width) {
-//     display: initial;
-//   }
-
-//   @media (min-width: @desktop-width) {
-//     display: none;
-//   }
-// }
