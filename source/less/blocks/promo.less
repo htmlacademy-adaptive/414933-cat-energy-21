@@ -7,7 +7,7 @@
   background-size: auto 302px;
   background-repeat: no-repeat;
   background-position: top;
-
+// Проверить сетку с выключеным min-height
   @media (min-width: @tablet-width) {
     position: relative;
     min-height: 850px;
@@ -22,6 +22,9 @@
   @media (min-width: @desktop-width) {
     // width: 1440px;
     // margin: 0 auto;
+    min-height: auto;
+    margin-bottom: 82px;
+    padding-bottom: 185px;
     background-image: url("../../img/index-bg-desktop.jpg");
     background-size: 50% auto;
     background-repeat: no-repeat;
@@ -71,6 +74,10 @@
     font-size: 20px;
     line-height: 1;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .promo__image {
@@ -88,7 +95,7 @@
     width: 552px;
     height: 449px;
     position: absolute;
-    top: 143px;
+    top: 140px;
     right: 330px;
     bottom: auto;
     left: auto;
