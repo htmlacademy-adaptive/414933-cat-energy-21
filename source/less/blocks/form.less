@@ -30,8 +30,10 @@
 }
 
 .form__fieldset-wrapper {
-  display: flex;
-  align-items: center;
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .form__fieldset--text {
