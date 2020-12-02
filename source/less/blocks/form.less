@@ -1,4 +1,6 @@
 .form {
+  margin-bottom: 32px;
+
   @media (min-width: @tablet-width) {
     padding-bottom: 70px;
   }
@@ -8,8 +10,6 @@
   // .outline(tomato);
   margin: 0;
   padding: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
   font-size: 16px;
   line-height: 18/16;
   text-transform: uppercase;
@@ -37,20 +37,48 @@
 }
 
 .form__fieldset--text {
+  position: relative;
+  padding-bottom: 10px;
+
   @media (min-width: @desktop-width) {
     width: 570px;
     margin-right: 80px;
   }
 }
 
+.form__fieldset--text::after {
+  content: "";
+  position: absolute;
+  left: -500px;
+  bottom: 0;
+  width: 1000%;
+  height: 1px;
+  background-color: @special_border-grey;
+}
+
 .form__fieldset--radio {
+  position: relative;
+  padding-top: 28px;
+
   @media (min-width: @desktop-width) {
     max-width: 525px;
     padding: 0;
   }
 }
 
+.form__fieldset--radio::after {
+  content: "";
+  position: absolute;
+  left: -500px;
+  bottom: 0;
+  width: 1000%;
+  height: 1px;
+  background-color: @special_border-grey;
+}
+
 .form__fieldset-checkbox {
+  margin-bottom: 16px;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -64,48 +92,10 @@
   }
 }
 
-.text-control {
-  padding-bottom: 13px;
-  display: flex;
-  align-items: center;
-}
-
-.text-control__label {
-  margin-right: 14px;
-}
-
-.radio-control {
-  padding-bottom: 25px;
-}
-
-.checkbox-control {
-  // .outline(fuchsia);
-  padding-bottom: 25px;
-
-  @media (min-width: @tablet-width) {
-    // width: 35%;
-    // margin-right: 90px;
-    flex-grow: 1;
-    flex-basis: 40%;
-  }
-
-  @media (min-width: @desktop-width) {
-    flex-grow: 0;
-    flex-basis: auto;
-    width: 221px;
-    margin-right: 0;
-  }
-}
-
-.checkbox-control:not(:last-child) {
-  @media (min-width: @desktop-width) {
-    margin-right: 104px;
-  }
-}
-
 .form__legend {
-  padding-top: 27px;
-  padding-bottom: 14px;
+  padding: 0;
+  padding-top: 28px;
+  padding-bottom: 35px;
   font-size: 24px;
   line-height: 26/24;
   text-transform: none;
@@ -114,6 +104,16 @@
     font-size: 36px;
     line-height: 1;
   }
+}
+
+.form__legend--comment {
+  padding-top: 10px;
+  padding-bottom: 38px;
+}
+
+.form__legend--checkbox {
+  padding-top: 22px;
+  padding-bottom: 39px;
 }
 
 .form__input {
@@ -133,8 +133,9 @@
 }
 
 .form__textarea {
-  padding: 0;
   width: 100%;
+  min-height: 150px;
+  padding: 9px 13px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18/16;
@@ -161,6 +162,8 @@
 }
 
 .form__footnote {
+  margin: 0;
+  padding-top: 20px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16/14;
