@@ -1,15 +1,27 @@
 .text-control {
-  padding-bottom: 13px;
+  margin-bottom: 13px;
   display: flex;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 26px;
+  }
 }
 
 .text-control__label {
   margin-right: 14px;
   color: @special_dark-grey;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 18px;
+  }
 }
 
 .text-control__input {
   padding-left: 14px;
   border: 1px solid @special_border-grey-2;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+  }
 }

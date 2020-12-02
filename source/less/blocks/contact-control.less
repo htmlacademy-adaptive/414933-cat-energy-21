@@ -3,6 +3,11 @@
   display: flex;
   margin-bottom: 13px;
 
+  @media (min-width: @tablet-width) {
+    align-items: center;
+    margin-bottom: 28px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 570px;
   }
@@ -12,10 +17,19 @@
   margin-right: 12px;
   padding-top: 10px;
   color: @special_dark-grey;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 18px;
+    padding: 0;
+  }
 }
 
 .contact-control__input {
   padding-left: 13px;
   padding-right: 35px;
   border: 1px solid @special_grey-2;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 19px;
+  }
 }

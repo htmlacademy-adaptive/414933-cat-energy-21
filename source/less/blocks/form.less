@@ -2,7 +2,7 @@
   margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 70px;
+    margin-bottom: 70px;
   }
 }
 
@@ -16,16 +16,16 @@
   border: none;
 
   @media (min-width: @tablet-width) {
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
     font-size: 20px;
     line-height: 30/20;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 67px;
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -39,6 +39,11 @@
 .form__fieldset--text {
   position: relative;
   padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: 49px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 570px;
@@ -54,15 +59,24 @@
   width: 1000%;
   height: 1px;
   background-color: @special_border-grey;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .form__fieldset--radio {
   position: relative;
   padding-top: 28px;
 
+  @media (min-width: @tablet-width) {
+    // padding: 0;
+    margin-bottom: 78px;
+    border: 1px solid @special_border-grey-2;
+  }
+
   @media (min-width: @desktop-width) {
     max-width: 525px;
-    padding: 0;
   }
 }
 
@@ -74,6 +88,21 @@
   width: 1000%;
   height: 1px;
   background-color: @special_border-grey;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.form__fieldset--contacts {
+  @media (min-width: @tablet-width) {
+    // .outline(red);
+    margin-bottom: 40px;
+  }
+}
+
+.form__fieldset--comment {
+  margin-bottom: 64px;
 }
 
 .form__fieldset-checkbox {
@@ -82,6 +111,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 18px;
   }
 }
 
@@ -101,6 +131,9 @@
   text-transform: none;
 
   @media (min-width: @tablet-width) {
+    padding: 0;
+    // padding-top: 78px;
+    margin-bottom: 76px;
     font-size: 36px;
     line-height: 1;
   }
@@ -109,11 +142,20 @@
 .form__legend--comment {
   padding-top: 10px;
   padding-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .form__legend--checkbox {
   padding-top: 22px;
   padding-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 63px;
+    padding: 0;
+  }
 }
 
 .form__input {
@@ -144,6 +186,7 @@
   border: 1px solid @special_border-grey-2;
 
   @media (min-width: @tablet-width) {
+    padding: 10px 18px;
     font-size: 20px;
     line-height: 30/20;
   }
@@ -168,4 +211,12 @@
   font-size: 14px;
   line-height: 16/14;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    align-self: center;
+    font-size: 16px;
+    line-height: 1;
+  }
 }
+
