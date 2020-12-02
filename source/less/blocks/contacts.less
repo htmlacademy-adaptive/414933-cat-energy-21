@@ -1,20 +1,22 @@
 .contacts {
   // .outline(fuchsia);
   padding-top: 28px;
-  padding-bottom: 22px;
+  padding-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: @basic_white;
 
   @media (min-width: @tablet-width) {
     padding-top: 62px;
-    padding-bottom: 60px;
+    padding-bottom: 57px;
     padding-left: 71px;
     padding-right: 71px;
   }
 
   @media (min-width: @desktop-width) {
     width: 570px;
+    padding-left: 0;
+    padding-right: 0;
     box-sizing: border-box;
   }
 }
@@ -28,6 +30,7 @@
 }
 
 .contacts__slogan {
+  align-self: center;
   margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -36,13 +39,21 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    padding-right: 235px;
     font-size: 20px;
     line-height: 21/20;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    padding: 0;
+    padding-left: 76px;
   }
 }
 
 .contacts__address {
   margin: 0;
+  padding-left: 18px;
   font-size: 14px;
   line-height: 20/14;
   color: @special_dark-grey;
@@ -50,5 +61,20 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20/16;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    padding: 0;
+    padding-right: 89px;
+    text-align: left;
+  }
+}
+
+.contacts__address span {
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-top: 20px;
   }
 }

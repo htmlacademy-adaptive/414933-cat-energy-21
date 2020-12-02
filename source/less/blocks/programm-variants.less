@@ -21,7 +21,7 @@
   background-color: @basic_grey;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
+    // width: 708px;
     margin-bottom: 30px;
   }
 
@@ -35,6 +35,10 @@
 
 .programm-variants__title {
   margin: 0;
+  padding-top: 30px;
+  padding-left: 90px;
+  padding-right: 30px;
+  padding-bottom: 30px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -42,28 +46,60 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    padding-top: 76px;
+    padding-left: 53px;
+    padding-bottom: 24px;
     font-size: 36px;
     line-height: 1;
   }
 
   @media (min-width: @desktop-width) {
-    text-align: center;
+    padding-left: 165px;
+    padding-bottom: 76px;
   }
 }
 
 .programm-variants__description {
+  margin: 0 20px;
+  padding-bottom: 23px;
+  font-family: "Arial", sans-serif;
   color: @special_dark-grey;
   border-bottom: 1px solid @special_border-grey;
 
   @media (min-width: @tablet-width) {
-    font-family: "Arial", sans-serif;
+    padding-left: 32px;
+    padding-right: 260px;
     font-size: 16px;
     line-height: 24/16;
     border: none;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+}
+
+.programm-variants__description br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: initial;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .programm-variants__link {
+  position: relative;
+  display: block;
+  padding-top: 19px;
+  padding-left: 19px;
+  padding-bottom: 21px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1;
@@ -71,6 +107,64 @@
   color: @basic_black;
 
   @media (min-width: @tablet-width) {
+    padding-top: 34px;
+    padding-left: 52px;
+    padding-bottom: 62px;
     font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 32px;
+    padding-left: 2px;
+  }
+}
+
+.programm-variants__link:active {
+  opacity: 30%;
+}
+
+.programm-variants__link::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 120px;
+  width: 32px;
+  height: 12px;
+  // background-color: rgb(83, 240, 240);
+  background-image: url("../img/arow.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+
+  @media (min-width: @tablet-width) {
+    top: 38px;
+    left: 183px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 36px;
+    left: 135px;
+  }
+}
+
+.programm-variants__link:hover::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 120px;
+  width: 32px;
+  height: 12px;
+  // background-color: rgb(83, 240, 240);
+  background-image: url("../img/arow-hover.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+
+  @media (min-width: @tablet-width) {
+    top: 38px;
+    left: 183px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 36px;
+    left: 135px;
   }
 }

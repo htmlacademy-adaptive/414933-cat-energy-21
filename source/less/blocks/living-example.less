@@ -1,43 +1,54 @@
 .living-example {
   // .outline(tomato);
   background-color: @special_bg-grey;
-}
 
-@media (min-width: @tablet-width) {
-  .living-example {
+  @media (min-width: @tablet-width) {
     background-color: @basic_white;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 36px;
+    background-image: linear-gradient(@basic_white 0%, @basic_white 31%, @special_bg-grey 31%, @special_bg-grey 100%);
   }
 }
 
-@media (min-width: @desktop-width) {
-  .living-example__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
+.living-example .container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.living-example__wrapper {
+  @media (min-width: @desktop-width) {
+    width: 570px;
   }
 }
 
 .living-example__title {
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 35px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40/36;
 
   @media (min-width: @tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 63px;
     font-size: 60px;
     line-height: 1;
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    padding-top: 77px;
+    padding-bottom: 146px;
   }
 }
 
 .living-example__text {
   margin: 0;
+  padding-right: 5px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -45,16 +56,15 @@
   color: @special_dark-grey;
 
   @media (min-width: @tablet-width) {
+    padding-right: 6px;
+    padding-bottom: 28px;
     font-size: 16px;
     line-height: 24/16;
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color: @basic_grey;
+    padding-right: 135px;
+    padding-bottom: 0;
   }
 }
 
@@ -65,12 +75,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
     display: block;
-    background-color: @basic_grey;
   }
 }
 
@@ -78,9 +83,20 @@
   // .outline(tomato);
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding-top: 41px;
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+    padding-top: 41px;
+    padding-left: 18px;
+    padding-right: 35px;
+  }
 
   @media (min-width: @desktop-width) {
     justify-content: left;
+    padding-top: 85px;
+    padding-left: 18px;
   }
 }
 
@@ -90,6 +106,7 @@
 }
 
 .living-example__value {
+  padding-bottom: 7px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 1;
@@ -97,25 +114,43 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 12px;
     font-size: 30px;
     line-height: 37/30;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 128px;
+    margin-right: 75px;
+    padding-bottom: 10px;
+  }
 }
 
+// .living-example__value:not()
+
 .living-example__description {
-  margin: 0;
+  width: 82px;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 1;
   text-align: center;
   color: @special_dark-grey;
 
   @media (min-width: @tablet-width) {
-    font-family: "Arial", sans-serif;
+    width: 128px;
     font-size: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
 .living-example__cost {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20/14;
@@ -123,11 +158,31 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    flex-grow: 1;
+    flex-basis: 35%;
+    padding-top: 36px;
+    padding-left: 10px;
     font-size: 20px;
     line-height: 1;
+    text-align: right;
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 55px;
+    padding-left: 0;
     text-align: left;
+  }
+}
+
+.living-example__cost span {
+  @media (min-width: @tablet-width) {
+    display: block;
+    padding-top: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+    padding-top: 0;
+    padding-left: 60px;
   }
 }

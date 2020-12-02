@@ -2,21 +2,26 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    background-color: @special_bg-grey;
+    // background-color: @special_bg-grey;
+    background-image: linear-gradient(@basic_white 0%, @basic_white 31%, @special_bg-grey 31%, @special_bg-grey 100%);
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    background-color: @basic_grey;
+    background-image: none;
   }
 }
 
 .slider__image {
+  width: 311px;
+  height: 232px;
   margin: 0 auto;
   display: none;
+
+  @media (min-width: @tablet-width) {
+    width: 600px;
+    height: 540px;
+    margin-top: 20px;
+  }
 }
 
 .slider__image--show {
@@ -27,9 +32,28 @@
   // .outline(fuchsia);
   display: flex;
   justify-content: space-around;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-top: 34px;
+  padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 58px;
+    padding-right: 58px;
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    margin-top: 20px;
+    padding: 0;
+    justify-content: space-between;
+    margin-left: 78px;
+  }
 }
 
 .slider__control-name {
+  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20/16;
@@ -42,8 +66,8 @@
 }
 
 .slider__control-bar {
-  width: 80px;
-  height: 10px;
+  width: 84px;
+  height: 14px;
   border: 1px solid @special_grey-2;
   border-radius: 6px;
   background-color: @basic_white;
@@ -54,5 +78,36 @@
     height: 6px;
     border: none;
     background-color: @special_grey-2;
+  }
+}
+
+.slider__control-toggle {
+  width: 35px;
+  height: 6px;
+  margin-top: 3px;
+  margin-left: 7px;
+  border-radius: 6px;
+  background-color: @basic_green;
+
+  @media (min-width: @tablet-width) {
+    width: 32px;
+    height: 32px;
+    margin-top: -12px;
+    margin-left: 200px;
+    border: 12px solid @basic_white;
+    border-radius: 15px;
+    box-shadow: 0 0 0 1px @special_grey-2, 0 1px 3px 1px @special_grey-2;
+  }
+}
+
+.slider__control-toggle:hover {
+  @media (min-width: @tablet-width) {
+    box-shadow: 0 0 0 1px @special_grey-2, 0 2px 4px 1px @special_grey-2;
+  }
+}
+
+.slider__control-toggle:active {
+  @media (min-width: @tablet-width) {
+    box-shadow: 0 0 0 1px @basic_green, 0 2px 4px 1px @special_grey-2;
   }
 }

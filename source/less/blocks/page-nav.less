@@ -20,6 +20,10 @@
   }
 }
 
+.page-nav--closed {
+  display: none;
+}
+
 .page-nav__list {
   // .outline(green);
   margin: 0;
@@ -53,6 +57,10 @@
     padding-top: 35px;
     padding-left: 35px;
     border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 40px;
   }
 }
 
@@ -91,6 +99,12 @@
   }
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 6px;
     border-bottom: 2px solid @basic_green;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @basic_white;
+    border-bottom: 2px solid @basic_white;
   }
 }
