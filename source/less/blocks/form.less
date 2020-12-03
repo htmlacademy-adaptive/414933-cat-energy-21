@@ -32,7 +32,7 @@
 .form__fieldset-wrapper {
   @media (min-width: @desktop-width) {
     display: flex;
-    align-items: center;
+    margin-bottom: 48px;
   }
 }
 
@@ -48,6 +48,7 @@
   @media (min-width: @desktop-width) {
     width: 570px;
     margin-right: 80px;
+    margin-bottom: 0;
   }
 }
 
@@ -76,7 +77,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 525px;
+    width: 570px;
+    height: min-content;
+    margin-bottom: 0;
   }
 }
 
@@ -96,8 +99,11 @@
 
 .form__fieldset--contacts {
   @media (min-width: @tablet-width) {
-    // .outline(red);
     margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 45px;
   }
 }
 
@@ -112,6 +118,10 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 25px;
   }
 }
 
@@ -219,4 +229,3 @@
     line-height: 1;
   }
 }
-
