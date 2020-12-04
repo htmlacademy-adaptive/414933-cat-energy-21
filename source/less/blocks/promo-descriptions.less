@@ -1,6 +1,12 @@
 .promo-descriptions {
   padding-top: 8px;
   padding-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: -32px;
+    padding-top: 14px;
+    padding-bottom: 0;
+  }
 }
 
 .promo-descriptions__title {
@@ -12,8 +18,7 @@
   line-height: 40/36;
 
   @media (min-width: @tablet-width) {
-    padding-top: 15px;
-    padding-bottom: 70px;
+    margin-bottom: 74px;
     font-size: 60px;
     line-height: 1;
   }
@@ -52,6 +57,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    min-width: 227px;
     flex-grow: 0;
     flex-basis: auto;
     width: 246px;

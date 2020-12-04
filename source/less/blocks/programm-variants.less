@@ -22,7 +22,7 @@
   background-color: @basic_grey;
 
   @media (min-width: @tablet-width) {
-    // width: 708px;
+    padding-top: 74px;
     margin-bottom: 30px;
   }
 
@@ -46,9 +46,8 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    padding-top: 76px;
+    margin-bottom: 26px;
     padding-left: 53px;
-    padding-bottom: 24px;
     font-size: 36px;
     line-height: 1;
   }
@@ -67,8 +66,8 @@
   border-bottom: 1px solid @special_border-grey;
 
   @media (min-width: @tablet-width) {
-    padding-left: 32px;
-    padding-right: 260px;
+    padding-left: 52px;
+    padding-right: 275px;
     font-size: 16px;
     line-height: 24/16;
     border: none;
@@ -124,8 +123,6 @@
 
 .programm-variants__link::after {
   content: "";
-  top: 20px;
-  left: 120px;
   width: 32px;
   height: 12px;
   margin-left: 16px;
@@ -134,8 +131,7 @@
   background-position: left;
 
   @media (min-width: @tablet-width) {
-    top: 38px;
-    left: 183px;
+    margin-left: 25px;
   }
 
   @media (min-width: @desktop-width) {
@@ -146,18 +142,16 @@
 
 .programm-variants__link:hover::after {
   content: "";
-  top: 20px;
-  left: 120px;
   width: 32px;
   height: 12px;
   background-image: url("../img/arow-hover.svg");
   background-repeat: no-repeat;
   background-position: left;
 
-  @media (min-width: @tablet-width) {
-    top: 38px;
-    left: 183px;
-  }
+  // @media (min-width: @tablet-width) {
+  //   top: 38px;
+  //   left: 183px;
+  // }
 
   @media (min-width: @desktop-width) {
     top: 36px;

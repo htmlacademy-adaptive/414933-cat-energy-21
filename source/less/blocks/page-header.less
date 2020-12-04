@@ -81,6 +81,11 @@
   padding-bottom: 13px;
   padding-left: 20px;
 
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    align-items: unset;
+  }
+
   @media (min-width: @desktop-width) {
     justify-content: flex-start;
   }
@@ -93,7 +98,7 @@
   @media (min-width: @tablet-width) {
     width: 60px;
     height: 50px;
-    margin-right: 12px;
+    margin-right: 14px;
   }
 
   @media (min-width: @desktop-width) {
@@ -108,8 +113,9 @@
   height: 20px;
   margin-left: 54px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     margin: 0;
+    margin-top: 15px;
   }
 
   @media (min-width: @desktop-width) {
