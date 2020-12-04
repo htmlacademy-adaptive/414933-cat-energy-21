@@ -18,6 +18,7 @@
 .programm-variants__item {
   margin-bottom: 20px;
   padding: 0;
+  padding-top: 29px;
   background-color: @basic_grey;
 
   @media (min-width: @tablet-width) {
@@ -35,10 +36,9 @@
 
 .programm-variants__title {
   margin: 0;
-  padding-top: 30px;
+  margin-bottom: 29px;
   padding-left: 90px;
   padding-right: 30px;
-  padding-bottom: 30px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -60,8 +60,8 @@
 }
 
 .programm-variants__description {
-  margin: 0 20px;
-  padding-bottom: 23px;
+  margin-bottom: 23px;
+  padding: 0 20px;
   font-family: "Arial", sans-serif;
   color: @special_dark-grey;
   border-bottom: 1px solid @special_border-grey;
@@ -95,8 +95,7 @@
 }
 
 .programm-variants__link {
-  position: relative;
-  display: block;
+  display: inline-flex;
   padding-top: 19px;
   padding-left: 19px;
   padding-bottom: 21px;
@@ -125,12 +124,11 @@
 
 .programm-variants__link::after {
   content: "";
-  position: absolute;
   top: 20px;
   left: 120px;
   width: 32px;
   height: 12px;
-  // background-color: rgb(83, 240, 240);
+  margin-left: 16px;
   background-image: url("../img/arow.svg");
   background-repeat: no-repeat;
   background-position: left;
@@ -148,12 +146,10 @@
 
 .programm-variants__link:hover::after {
   content: "";
-  position: absolute;
   top: 20px;
   left: 120px;
   width: 32px;
   height: 12px;
-  // background-color: rgb(83, 240, 240);
   background-image: url("../img/arow-hover.svg");
   background-repeat: no-repeat;
   background-position: left;
