@@ -79,8 +79,8 @@
   border-bottom: 1px solid @special_border-grey;
 
   @media (min-width: @tablet-width) {
-    // padding: 0;
-    margin-bottom: 78px;
+    margin: 0 40px;
+    margin-bottom: 95px;
     border: 1px solid @special_border-grey-2;
   }
 
@@ -112,7 +112,9 @@
   border-top: 2px solid @basic_green;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 40px;
+    margin: 0 -30px;
+    margin-bottom: 58px;
+    padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -125,22 +127,34 @@
   margin-bottom: 42px;
   padding: 0 20px;
   border-top: 2px solid @basic_green;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 -30px;
+    margin-bottom: 80px;
+    padding: 0px 70px;
+  }
 }
 
 .form__fieldset-checkbox {
-  margin: 0 -20px;
+  margin: 0 -30px;
   margin-bottom: 16px;
-  padding: 0 20px;
+  padding: 0 30px;
   border-top: 2px solid @basic_green;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
     margin-bottom: 18px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 25px;
+  }
+}
+
+.form__checkbox-wrapper {
+  @media (min-width: @tablet-width) {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
   }
 }
 
@@ -165,7 +179,8 @@
   text-transform: none;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
+    padding: 0 40px;
+    margin-left: 0;
     margin-bottom: 76px;
     font-size: 36px;
     line-height: 1;
@@ -175,7 +190,7 @@
 .form__legend--comment {
 
   @media (min-width: @tablet-width) {
-    padding: 0;
+    margin-left: -40px;
   }
 }
 
@@ -183,7 +198,7 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 63px;
-    padding: 0;
+    // padding: 0;
   }
 }
 
