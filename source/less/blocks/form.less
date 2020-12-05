@@ -4,6 +4,10 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 70px;
   }
+
+  @media (min-width: @desktop-width) {
+  padding-bottom: 10px;
+  }
 }
 
 .form__fieldset {
@@ -32,7 +36,8 @@
 .form__fieldset-wrapper {
   @media (min-width: @desktop-width) {
     display: flex;
-    margin-bottom: 48px;
+    margin-bottom: 65px;
+    margin-left: 20px;
   }
 }
 
@@ -53,6 +58,7 @@
     width: 570px;
     margin-right: 80px;
     margin-bottom: 0;
+    padding: 0;
   }
 }
 
@@ -81,13 +87,15 @@
   @media (min-width: @tablet-width) {
     margin: 0 40px;
     margin-bottom: 95px;
+    padding: 0;
+    padding-top: 28px;
     border: 1px solid @special_border-grey-2;
   }
 
   @media (min-width: @desktop-width) {
     width: 570px;
     height: min-content;
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
@@ -118,7 +126,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 45px;
+    margin: 0 -110px;
+    margin-bottom: 92px;
+    padding: 0 70px;
   }
 }
 
@@ -133,20 +143,30 @@
     margin-bottom: 80px;
     padding: 0px 70px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 -110px;
+    margin-bottom: 80px;
+    padding: 0px 110px;
+  }
 }
 
 .form__fieldset-checkbox {
-  margin: 0 -30px;
+  margin: 0 -20px;
   margin-bottom: 16px;
-  padding: 0 30px;
+  padding: 0 20px;
   border-top: 2px solid @basic_green;
 
   @media (min-width: @tablet-width) {
+    margin: 0 -30px;
     margin-bottom: 18px;
+    padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0 -110px;
     margin-bottom: 25px;
+    padding: 0 70px;
   }
 }
 
@@ -161,7 +181,7 @@
 .form__contact-wrapper {
   @media (min-width: @desktop-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around
   }
 }
 
@@ -169,7 +189,8 @@
   width: fit-content;
   margin: 0;
   margin-top: -20px;
-  margin-bottom: 36px;
+  margin-bottom: 37px;
+  margin-right: 78px;
   padding: 0 20px;
   margin-left: -20px;
   background-color: @basic_white;
@@ -181,14 +202,17 @@
   @media (min-width: @tablet-width) {
     padding: 0 40px;
     margin-left: 0;
-    margin-bottom: 76px;
+    margin-bottom: 75px;
     font-size: 36px;
     line-height: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 76px;
   }
 }
 
 .form__legend--comment {
-
   @media (min-width: @tablet-width) {
     margin-left: -40px;
   }

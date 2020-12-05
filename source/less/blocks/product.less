@@ -1,7 +1,6 @@
 .product {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
   padding-bottom: 25px;
 
   @media (min-width: @tablet-width) {
@@ -14,34 +13,6 @@
     padding-left: 38px;
     padding-right: 38px;
     padding-bottom: 40px;
-  }
-}
-
-.product::after {
-  content: "";
-  position: absolute;
-  left: -500px;
-  bottom: 0;
-  width: 1000%;
-  height: 1px;
-  background-color: @special_border-grey;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
-.product:first-child::before {
-  content: "";
-  position: absolute;
-  left: -500px;
-  top: 0;
-  width: 1000%;
-  height: 1px;
-  background-color: @special_border-grey;
-
-  @media (min-width: @tablet-width) {
-    display: none;
   }
 }
 
