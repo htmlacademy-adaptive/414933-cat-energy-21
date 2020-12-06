@@ -1,7 +1,7 @@
 .special-item {
   // .outline(tomato);
+  position: relative;
   text-align: center;
-  padding-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     display: block;
@@ -18,10 +18,24 @@
   }
 }
 
+.special-item::after {
+  content: "";
+  position: absolute;
+  left: -500px;
+  bottom: 0;
+  width: 1000%;
+  height: 1px;
+  background-color: @special_border-grey;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .special-item__title {
   margin: 0;
+  margin-bottom: 8px;
   padding-top: 80px;
-  padding-bottom: 8px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20/16;
@@ -42,7 +56,7 @@
 
 .special-item__text {
   margin: 0;
-  padding-bottom: 20px;
+  margin-bottom: 32px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16/12;

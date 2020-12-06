@@ -35,12 +35,13 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: 30px;
+    padding-top: 42px;
   }
 
   @media (min-width: @desktop-width) {
     justify-content: flex-end;
     margin: 0;
-    padding-top: 35px;
+    padding-top: 75px;
   }
 }
 
@@ -54,13 +55,12 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    padding-top: 35px;
-    padding-left: 35px;
+    margin-left: 35px;
     border: none;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 40px;
+    padding-top: 0;
   }
 }
 
@@ -106,5 +106,12 @@
   @media (min-width: @desktop-width) {
     color: @basic_white;
     border-bottom: 2px solid @basic_white;
+  }
+}
+
+.page-nav__link--inner-current {
+  @media (min-width: @desktop-width) {
+    color: @basic_black;
+    border-bottom: 2px solid @basic_green;
   }
 }

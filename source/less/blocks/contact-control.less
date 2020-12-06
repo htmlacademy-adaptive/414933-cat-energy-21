@@ -1,18 +1,39 @@
 .contact-control {
   // .outline(fuchsia);
   display: flex;
-  align-items: center;
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    align-items: center;
+    margin-bottom: 28px;
+    margin-left: 40px;
+    margin-right: 35px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 570px;
+    margin: 0;
   }
 }
 
 .contact-control__label {
   margin-right: 12px;
+  padding-top: 10px;
   color: @special_dark-grey;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 18px;
+    padding: 0;
+  }
 }
 
 .contact-control__input {
+  padding-left: 13px;
+  padding-right: 35px;
   border: 1px solid @special_grey-2;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 18px;
+    padding-right: 40px;
+  }
 }

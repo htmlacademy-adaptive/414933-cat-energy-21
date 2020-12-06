@@ -1,0 +1,40 @@
+.checkbox-control {
+  // .outline(fuchsia);
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    // width: 35%;
+    // margin-right: 90px;
+    flex-grow: 1;
+    flex-basis: 40%;
+    margin-bottom: 42px;
+    // margin-right: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-grow: 0;
+    flex-basis: auto;
+    width: 221px;
+    margin-right: 0;
+  }
+}
+
+.checkbox-control:nth-child(2n) {
+  @media (min-width: @tablet-width) {
+    margin-right: -60px;
+  }
+}
+
+.checkbox-control:not(:last-child) {
+  @media (min-width: @desktop-width) {
+    margin-right: 104px;
+  }
+}
+
+.checkbox-control__label {
+  padding-left: 46px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+  }
+}
