@@ -20,8 +20,8 @@
   border: none;
 
   @media (min-width: @tablet-width) {
-    margin-left: 40px;
-    margin-right: 40px;
+    // margin-left: 40px;
+    // margin-right: 40px;
     font-size: 20px;
     line-height: 30/20;
   }
@@ -37,14 +37,14 @@
   @media (min-width: @desktop-width) {
     display: flex;
     margin-bottom: 65px;
-    margin-left: 20px;
+    // margin-left: 20px;
   }
 }
 
 .form__fieldset--text {
   // position: relative;
-  margin: 0 -20px;
-  padding: 0 20px;
+  // margin: 0 -20px;
+  // padding: 0 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid @special_border-grey;
 
@@ -78,9 +78,9 @@
 
 .form__fieldset--radio {
   // position: relative;
-  margin: 0 -20px;
+  // margin: 0 -20px;
   margin-bottom: 40px;
-  padding: 0 20px;
+  // padding: 0 20px;
   padding-top: 28px;
   border-bottom: 1px solid @special_border-grey;
 
@@ -114,59 +114,59 @@
 // }
 
 .form__fieldset--contacts {
-  margin: 0 -20px;
+  // margin: 0 -20px;
   margin-bottom: 26px;
-  padding: 0 20px;
+  // padding: 0 20px;
   border-top: 2px solid @basic_green;
 
   @media (min-width: @tablet-width) {
-    margin: 0 -30px;
+    // margin: 0 -30px;
     margin-bottom: 58px;
-    padding: 0 30px;
+    // padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 -110px;
+    // margin: 0 -110px;
     margin-bottom: 92px;
-    padding: 0 70px;
+    // padding: 0 70px;
   }
 }
 
 .form__fieldset--comment {
-  margin: 0 -20px;
+  // margin: 0 -20px;
   margin-bottom: 42px;
-  padding: 0 20px;
+  // padding: 0 20px;
   border-top: 2px solid @basic_green;
 
   @media (min-width: @tablet-width) {
-    margin: 0 -30px;
+    // margin: 0 -30px;
     margin-bottom: 80px;
-    padding: 0 70px;
+    // padding: 0 70px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 -110px;
+    // margin: 0 -110px;
     margin-bottom: 80px;
-    padding: 0 110px;
+    // padding: 0 110px;
   }
 }
 
 .form__fieldset-checkbox {
-  margin: 0 -20px;
+  // margin: 0 -20px;
   margin-bottom: 16px;
-  padding: 0 20px;
+  // padding: 0 20px;
   border-top: 2px solid @basic_green;
 
   @media (min-width: @tablet-width) {
-    margin: 0 -30px;
+    // margin: 0 -30px;
     margin-bottom: 18px;
-    padding: 0 30px;
+    // padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 -110px;
+    // margin: 0 -110px;
     margin-bottom: 25px;
-    padding: 0 70px;
+    // padding: 0 70px;
   }
 }
 
@@ -174,7 +174,11 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 40px;
+    padding: 0 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
   }
 }
 
@@ -182,6 +186,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-around;
+    padding: 0 75px;
   }
 }
 
@@ -190,18 +195,17 @@
   margin: 0;
   margin-top: -20px;
   margin-bottom: 37px;
-  margin-right: 78px;
+  margin-right: 98px;
   padding: 0 20px;
-  margin-left: -20px;
   background-color: @basic_white;
   font-size: 24px;
-  line-height: 26/24;
+  line-height: 1.08333333;
   font-weight: 400;
   text-transform: none;
 
   @media (min-width: @tablet-width) {
     padding: 0 40px;
-    margin-left: 0;
+    margin-left: 30px;
     margin-bottom: 75px;
     font-size: 36px;
     line-height: 1;
@@ -209,14 +213,15 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 76px;
+    margin-left: 70px;
   }
 }
 
-.form__legend--comment {
-  @media (min-width: @tablet-width) {
-    margin-left: -40px;
-  }
-}
+// .form__legend--comment {
+//   @media (min-width: @tablet-width) {
+//     margin-left: -10px;
+//   }
+// }
 
 .form__legend--checkbox {
   @media (min-width: @tablet-width) {
@@ -241,6 +246,16 @@
   }
 }
 
+.form__textarea-wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
+}
+
 .form__textarea {
   width: 100%;
   min-height: 150px;
@@ -262,12 +277,11 @@
 .form__bottom-wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0 72px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
+    padding: 0 110px;
   }
 }
 
