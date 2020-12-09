@@ -8,6 +8,10 @@
   background-size: auto 302px;
   background-repeat: no-repeat;
   background-position: top;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/index-bg-mobile@2x.jpg"), linear-gradient(@special_bg-green, @special_bg-green);
+  }
   // Проверить сетку с выключеным min-height
   @media (min-width: @tablet-width) {
     position: relative;
@@ -33,6 +37,10 @@
     background-repeat: no-repeat;
     background-position: top right;
     z-index: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index-bg-desktop@2x.jpg");
+    }
   }
 }
 
