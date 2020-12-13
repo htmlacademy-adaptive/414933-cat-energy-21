@@ -1,39 +1,15 @@
 .special-item {
   // .outline(tomato);
-  position: relative;
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    display: block;
-    flex: 1 0 40%;
-    margin-bottom: 60px;
-    margin-left: 60px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-left: 0;
-    padding-left: 38px;
-    padding-right: 38px;
-    padding-bottom: 40px;
-  }
-}
-
-.special-item::after {
-  content: "";
-  position: absolute;
-  left: -500px;
-  bottom: 0;
-  width: 1000%;
-  height: 1px;
-  background-color: @special_border-grey;
-
-  @media (min-width: @tablet-width) {
-    display: none;
+    border: 2px solid @basic_grey;
+    background-color: @basic_white;
   }
 }
 
 .special-item__title {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 8px;
   padding-top: 80px;
   font-weight: 400;
@@ -43,29 +19,32 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    padding-top: 234px;
-    padding-bottom: 23px;
+    margin-bottom: 22px;
+    padding: 0 74px;
+    padding-top: 162px;
     font-size: 20px;
     line-height: 22/20;
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 24px;
+    padding: 0 10px;
+    padding-top: 158px;
     line-height: 22/20;
   }
 }
 
 .special-item__text {
-  margin: 0;
-  margin-bottom: 32px;
+  margin: 0 auto;
+  margin-bottom: 22px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16/12;
   color: @special_dark-grey;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 87px;
-    padding-left: 79px;
-    padding-right: 78px;
+    margin-bottom: 85px;
+    padding: 0 70px;
     font-size: 16px;
     line-height: 18/16;
   }
@@ -78,6 +57,11 @@
 
 .special-item__button {
   margin: 0 auto;
+  padding: 22px;
   color: @special_dark-grey;
   background-color: @basic_grey;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px;
+  }
 }
