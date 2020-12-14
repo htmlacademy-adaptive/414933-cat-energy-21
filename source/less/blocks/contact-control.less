@@ -1,5 +1,6 @@
 .contact-control {
   // .outline(fuchsia);
+  position: relative;
   display: flex;
   margin-bottom: 13px;
 
@@ -28,6 +29,7 @@
 }
 
 .contact-control__input {
+  position: relative;
   padding-left: 13px;
   padding-right: 35px;
   border: 1px solid @special_grey-2;
@@ -36,4 +38,18 @@
     padding-left: 18px;
     padding-right: 40px;
   }
+}
+
+.contact-control__input:focus {
+  border: 2px solid @basic_black;
+}
+
+.contact-control__input:invalid {
+  border: 2px solid @error;
+}
+
+.contact-control__icon {
+  position: absolute;
+  right: 14px;
+  top: 12px;
 }
