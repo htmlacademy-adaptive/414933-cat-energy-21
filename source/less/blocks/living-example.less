@@ -10,23 +10,36 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 75px;
-    padding-bottom: 75px;
     border: none;
     background-image: linear-gradient(@basic_white 0%, @basic_white 31%, @special_bg-grey 31%, @special_bg-grey 100%);
   }
 }
 
-.living-example .container {
+.living-example__wrapper {
   @media (min-width: @desktop-width) {
+    position: relative;
     display: flex;
+    flex-grow: 1;
+    padding: 0;
   }
 }
 
-.living-example__wrapper {
-  @media (min-width: @desktop-width) {
-    width: 570px;
-  }
-}
+// .living-example .container {
+//   @media (min-width: @desktop-width) {
+//     display: flex;
+//   }
+// }
+
+// .living-examle__description {
+//   @media (min-width: @desktop-width) {
+//     margin-right: 98px;
+//   }
+// }
+// .living-example__wrapper {
+//   @media (min-width: @desktop-width) {
+//     width: 570px;
+//   }
+// }
 
 .living-example__title {
   margin: 0;
@@ -43,7 +56,37 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 148px;
+    margin-bottom: -190px;
+    padding-left: 110px;
+  }
+}
+
+.living-example__background {
+  @media (min-width: @tablet-width) {
+    background-image: linear-gradient(@basic_white 0%, @basic_white 448px, @special_bg-grey 448px, @special_bg-grey 100%);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(@basic_white 0%, @basic_white 267px, @basic_grey 267px, @basic_grey 100%);
+  }
+}
+
+.living-example__background::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    flex-grow: 1;
+    flex-basis: 9%;
+  }
+}
+
+.living-example__background::after {
+  @media (min-width: @desktop-width) {
+    content: "";
+    flex-grow: 1;
+    flex-basis: 11%;
+    background-image: linear-gradient(@basic_white 0%, @basic_white 267px, @special_bg-grey 267px, @special_bg-grey 100%);
   }
 }
 
@@ -66,8 +109,10 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 68px;
-    padding-right: 135px;
+    padding-right: 116px;
+    /* padding-left: 0px; */
     padding-bottom: 0;
+    padding-top: 338px;
   }
 }
 
@@ -154,14 +199,14 @@
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
-    background-color: @special_bg-grey;
+    background-color: @basic_grey;
   }
 }
 
 .living-example__cost {
   margin: 0;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20/14;
