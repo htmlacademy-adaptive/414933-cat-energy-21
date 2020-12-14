@@ -58,7 +58,7 @@
   transform: translateX(-20px);
 
   @media (min-width: @tablet-width) {
-    background-image: linear-gradient(#ffffff 0px, #ffffff 172px, #eaeaea 172px, #eaeaea 100%);
+    background-image: linear-gradient(@basic_white 0, @basic_white 172px, @special_bg-grey 172px, @special_bg-grey 100%);
     transform: translate(13px, -18px);
     z-index: 200;
     width: 341px;
@@ -67,7 +67,7 @@
   @media (min-width: @desktop-width) {
     width: 371px;
     height: 659px;
-    background-image: linear-gradient(#ffffff 0px, #ffffff 194px, @basic_grey 194px, @basic_grey 100%);
+    background-image: linear-gradient(@basic_white 0, @basic_white 194px, @basic_grey 194px, @basic_grey 100%);
   }
 }
 
@@ -92,8 +92,6 @@
     background-image: linear-gradient(@basic_white 0%, @basic_white 194px, @special_bg-grey 194px, @special_bg-grey 100%);
   }
 }
-
-
 
 .slider__image--after img {
   @media (min-width: @tablet-width) {

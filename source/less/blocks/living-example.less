@@ -76,24 +76,16 @@
 .living-example__background::before {
   @media (min-width: @desktop-width) {
     content: "";
-    /* position: absolute; */
     flex-grow: 1;
     flex-basis: 9%;
-    /* width: 100px; */
-    /* height: 100%; */
-    // background-color: aqua;
   }
 }
 
-.living-example__background::after{
+.living-example__background::after {
   @media (min-width: @desktop-width) {
     content: "";
-    /* position: absolute; */
     flex-grow: 1;
     flex-basis: 11%;
-    /* width: 100px; */
-    /* height: 100%; */
-    // background-color: #654dd3;
     background-image: linear-gradient(@basic_white 0%, @basic_white 267px, @special_bg-grey 267px, @special_bg-grey 100%);
   }
 }
