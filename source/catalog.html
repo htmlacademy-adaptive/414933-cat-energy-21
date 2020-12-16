@@ -9,9 +9,15 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__logo-wrapper">
-        <a class="page-header__logo-link" href="index.html">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/34x38" width="34" height="38" alt="Логотим с изображением кота">
-          <img class="page-header__logo-title" src="https://via.placeholder.com/100x18" width="100" height="20" alt="Кэт энерджи">
+        <a class="page-header__logo-link">
+          <picture>
+            <source media="(min-width: 1440px" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Логотим с изображением кота">
+          </picture>
+          <picture>
+            <img class="page-header__logo-title" src="img/logo-title.svg" width="100" height="20" alt="Кэт энерджи">
+          </picture>
         </a>
         <button class="page-header__toggle page-header__toggle--opened" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -38,7 +44,9 @@
         <ul class="catalog__list">
           <li class="catalog__item product">
             <a class="product__link-img" href="#">
-              <img class="product__img" src="https://via.placeholder.com/85x100" alt="Cat Energy Pro 500 г">
+              <picture>
+                <img class="product__img" src="img/product1-mobile@1x.png" srcset="img/product1-mobile@2x.png 2x" alt="Cat Energy Pro 500 г">
+              </picture>
             </a>
             <div class="product__wrapper">
               <a href="#"><h3 class="product__titile">Cat Energy Pro 500 г</h3></a>
@@ -61,7 +69,7 @@
           </li>
           <li class="catalog__item product">
             <a class="product__link-img" href="#">
-              <img class="product__img" src="https://via.placeholder.com/85x100" alt="Cat Energy Pro 1000 г">
+              <img class="product__img" src="img/product2-mobile@1x.png" srcset="img/product2-mobile@2x.png 2x" alt="Cat Energy Pro 1000 г">
             </a>
             <div class="product__wrapper">
               <a href="#"><h3 class="product__titile">Cat Energy Pro 1000 г</h3></a>
@@ -84,7 +92,7 @@
           </li>
           <li class="catalog__item product">
             <a class="product__link-img" href="#">
-              <img class="product__img" src="https://via.placeholder.com/85x100" alt="Cat Energy Pro 500 г">
+              <img class="product__img" src="img/product3-mobile@1x.png" srcset="img/product3-mobile@2x.png 2x" alt="Cat Energy Pro 500 г">
             </a>
             <div class="product__wrapper">
               <a href="#"><h3 class="product__titile">Cat Energy Pro 500 г</h3></a>
@@ -107,7 +115,7 @@
             </li>
           <li class="catalog__item product">
             <a class="product__link-img" href="#">
-              <img class="product__img" src="https://via.placeholder.com/85x100" alt="Cat Energy Pro 1000 г">
+              <img class="product__img" src="img/product4-mobile@1x.png" srcset="img/product4-mobile@2x.png 2x" alt="Cat Energy Pro 1000 г">
             </a>
             <div class="product__wrapper">
               <a href="#"><h3 class="product__titile">Cat Energy Pro 1000 г</h3></a>
@@ -130,7 +138,7 @@
           </li>
           <li class="catalog__item product">
             <a class="product__link-img" href="#">
-              <img class="product__img" src="https://via.placeholder.com/85x100" alt="Cat Energy Slim 500 г">
+              <img class="product__img" src="img/product5-mobile@1x.png" srcset="img/product5-mobile@2x.png 2x" alt="Cat Energy Slim 500 г">
             </a>
             <div class="product__wrapper">
               <a href="#"><h3 class="product__titile">Cat Energy Slim 500 г</h3></a>
@@ -153,7 +161,7 @@
           </li>
           <li class="catalog__item product">
             <a class="product__link-img" href="#">
-              <img class="product__img" src="https://via.placeholder.com/85x100" alt="Cat Energy Slim 1000 г">
+              <img class="product__img" src="img/product6-mobile@1x.png" srcset="img/product6-mobile@2x.png 2x" alt="Cat Energy Slim 1000 г">
             </a>
             <div class="product__wrapper">
               <a href="#"><h3 class="product__titile">Cat Energy Slim 1000 г</h3></a>
@@ -176,7 +184,7 @@
           </li>
           <li class="catalog__item product">
             <a class="product__link-img" href="#">
-              <img class="product__img" src="https://via.placeholder.com/85x100" alt="Cat Energy Slim 500 г">
+              <img class="product__img" src="img/product7-mobile@1x.png" srcset="img/product7-mobile@2x.png 2x" alt="Cat Energy Slim 500 г">
             </a>
             <div class="product__wrapper">
               <a href="#"><h3 class="product__titile">Cat Energy Slim 500 г</h3></a>
@@ -248,32 +256,34 @@
     <footer class="page-footer">
       <div class="page-footer__top">
         <h2 class="visually-hidden">Контакты</h2>
-          <div class="page-footer__contacts contacts contacts--inner-page contacts--catalog-page">
+          <div class="page-footer__contacts contacts contacts--inner-page">
               <p class="contacts__slogan">Приглашаем к&#160сотрудничеству дилеров!</p>
               <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
           </div>
-          <img class="page-footer__map" src="img/location.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <div class="page-footer__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1607619667513!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
       </div>
       <div class="page-footer__bottom footer-bottom container">
         <a class="page-footer__logo">
-          <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Кэт энерджи">
+            <img src="img/logo-title.svg" width="128" height="24" alt="Кэт энерджи">
         </a>
         <ul class="footer-bottom__socials socials">
           <li class="socials__item">
             <a class="socials__link socials__link--vkontakte" href="https://vk.com/">
-              <img src="https://via.placeholder.com/23x23" alt="ВКонтакте">
+              <img src="img/icon_vkontakte.svg" width="32" height="16" alt="ВКонтакте">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--instagram" href="https://instagram.com/">
-              <img src="https://via.placeholder.com/23x23" alt="Инстаграм">
+              <img src="img/icon_instagram.svg" width="16" height="16" alt="Инстаграм">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--facebook" href="https://facebook.com/">
-              <img src="https://via.placeholder.com/23x23" alt="Фэйсбук">
+              <img src="img/icon_facebook.svg" width="22" height="22" alt="Фэйсбук">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
