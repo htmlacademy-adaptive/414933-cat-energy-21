@@ -47,8 +47,12 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     flex-grow: 0;
     flex-basis: auto;
+    height: 213px;
     margin-top: -80px;
     padding: 0;
   }
@@ -59,8 +63,9 @@
 
   @media (min-width: @tablet-width) {
     width: 170px;
-    height: 210px;
+    // height: 210px;
     padding: 0;
+    object-fit: contain;
   }
 }
 
