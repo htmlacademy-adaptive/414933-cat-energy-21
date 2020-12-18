@@ -9,6 +9,7 @@
 }
 
 .special-item__title {
+  flex-basis: 100%;
   margin: 0 auto;
   margin-bottom: 8px;
   padding-top: 80px;
@@ -17,6 +18,9 @@
   line-height: 20/16;
   color: @special_black;
   text-transform: uppercase;
+  background-image: url("../../img/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center 27px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 22px;
@@ -24,6 +28,8 @@
     padding-top: 162px;
     font-size: 20px;
     line-height: 22/20;
+    background-size: 60px;
+    background-position: center 50px;
   }
 
   @media (min-width: @desktop-width) {
