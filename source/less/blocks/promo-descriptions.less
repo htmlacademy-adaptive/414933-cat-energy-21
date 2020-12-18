@@ -124,6 +124,7 @@
 }
 
 .promo-descriptions__text {
+  position: relative;
   min-height: 60px;
   margin: 0;
   padding-left: 80px;
@@ -135,5 +136,85 @@
     padding: 0;
     font-size: 16px;
     line-height: 24/16;
+  }
+}
+
+.promo-descriptions__text--useful::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../img/useful-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: -5px;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -116px;
+    left: 0;
+    background-size: contain;
+  }
+}
+
+.promo-descriptions__text--simply::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../img/simply-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: -5px;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -116px;
+    left: 0;
+    background-size: contain;
+  }
+}
+
+.promo-descriptions__text--easy::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../img/easy-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: -5px;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -116px;
+    left: 0;
+    background-size: contain;
+  }
+}
+
+.promo-descriptions__text--fast::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../img/fast-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: -5px;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -116px;
+    left: 0;
+    background-size: contain;
   }
 }
