@@ -4,6 +4,7 @@
   @media (min-width: @tablet-width) {
     margin: 0 -30px;
     padding: 0 30px;
+    background-image: linear-gradient(@basic_white 0%, @basic_white 246px, @special_bg-grey 246px, @special_bg-grey 100%);
   }
 
   @media (min-width: @desktop-width) {
@@ -13,13 +14,14 @@
 }
 
 .slider__images {
-  overflow-x: hidden;
+  height: 243px;
 
   @media (min-width: @tablet-width) {
     overflow: hidden;
     position: relative;
     width: 708px;
     height: 620px;
+    margin: 0 auto;
     margin-bottom: -6px;
   }
 
@@ -32,7 +34,6 @@
 
 .slider__image {
   width: 311px;
-  // height: 232px;
   margin: 0 auto;
   display: none;
 
@@ -55,7 +56,7 @@
 }
 
 .slider__image--before {
-  transform: translateX(-20px);
+  transform: translate(-20px, 7px);
 
   @media (min-width: @tablet-width) {
     background-image: linear-gradient(@basic_white 0, @basic_white 172px, @special_bg-grey 172px, @special_bg-grey 100%);
@@ -67,11 +68,15 @@
   @media (min-width: @desktop-width) {
     width: 371px;
     height: 659px;
-    background-image: linear-gradient(@basic_white 0, @basic_white 194px, @basic_grey 194px, @basic_grey 100%);
+    transform: translate(13px, -21px);
+    background-image: linear-gradient(@basic_white 0, @basic_white 197px, @basic_grey 197px, @basic_grey 100%);
   }
 }
 
 .slider__image--before img {
+  width: 311px;
+  height: 232px;
+
   @media (min-width: @tablet-width) {
     width: 686px;
     max-width: 708px;
@@ -80,6 +85,8 @@
 }
 
 .slider__image--after {
+  transform: translate(16px, 14px);
+
   @media (min-width: @tablet-width) {
     display: block;
     transform: translate(113px, -22px);
@@ -94,6 +101,9 @@
 }
 
 .slider__image--after img {
+  width: 251px;
+  height: 240px;
+
   @media (min-width: @tablet-width) {
     width: 535px;
     max-width: 708px;
@@ -102,7 +112,6 @@
 }
 
 .slider__controls {
-  // .outline(fuchsia);
   display: flex;
   justify-content: space-around;
   padding-left: 33px;
@@ -122,10 +131,8 @@
     bottom: 70px;
     right: 8px;
     width: 570px;
-    /* margin-top: 20px; */
     padding: 0;
     justify-content: space-between;
-    /* margin-left: 78px; */
     z-index: 300;
   }
 }
