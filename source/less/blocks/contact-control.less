@@ -47,6 +47,18 @@
   border: 2px solid @error;
 }
 
+.contact-control__input + svg {
+  stroke: @special_dark-grey-2;
+}
+
+.contact-control__input:focus + svg {
+  stroke: @basic_green;
+}
+
+.contact-control__input:invalid + svg {
+  stroke: @error;
+}
+
 .contact-control__icon {
   position: absolute;
   right: 14px;
