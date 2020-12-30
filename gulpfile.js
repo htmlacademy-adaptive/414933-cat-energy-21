@@ -45,7 +45,7 @@ exports.styles = styles;
 // Scripts
 
 // const scripts = () => {
-//   return gulp.src("source/js/script.js")
+//   return gulp.src("source/js/script.js")                 Отключил, т.к. вызывает ошибку
 //     .pipe(uglify())
 //     .pipe(rename("script.min.js"))
 //     .pipe(gulp.dest("build/js"))
@@ -57,7 +57,7 @@ exports.styles = styles;
 // Images
 
 const images = () => {
-  return gulp.src("source/img/*.{jpg, png, svg}")
+  return gulp.src("source/img/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.mozjpeg({progressive: true}),
@@ -71,15 +71,15 @@ exports.images = images;
 // WebP
 
 const createWebp = () => {
-  return gulp.src("source/img/*.{jpg, png}")
+  return gulp.src("source/img/*.{jpg,png}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("build/img"))
 }
 
-exports.creatteWebp = createWebp;
+exports.createWebp = createWebp;
 
 // Sprite
-// Собери иконки для спрайта в отдельную папку и пропиши её адрес в gulp.src
+
 const sprite = () => {
   return gulp.src("source/img/icons/*.svg")
     .pipe(svgstore())
@@ -139,9 +139,9 @@ const reload = done => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  // gulp.watch("source/js/script.js", gulp.series("scripts"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/less/**/*.less", gulp.series(styles));
+  // gulp.watch("source/js/script.js", gulp.series(scripts));  Отключил, т.к. вызывает ошибку
+  gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
 // Build
@@ -150,7 +150,7 @@ const build = gulp.series(
   clean,
   styles,
   html,
-// scripts,
+// scripts,            Отключил, т.к. вызывает ошибку
   sprite,
   copy,
   images,
