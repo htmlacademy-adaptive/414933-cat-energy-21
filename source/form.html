@@ -74,6 +74,7 @@
           </fieldset>
         </div>
         <fieldset class="form__fieldset form__fieldset--contacts">
+<<<<<<< HEAD
           <h3 class="form__legend form__legend--stripes">Контактные данные (владельца кота)</h3>
           <div class="form__contact-wrapper container">
             <div class="contact-control">
@@ -89,33 +90,56 @@
               <svg class="contact-control__icon" width="20" height="20" fill="none">
                 <use xlink:href="img/sprite.svg#phone-logo"></use>
               </svg>
+=======
+          <div class="container">
+            <h3 class="form__legend form__legend--stripes">Контактные данные (владельца кота)</h3>
+            <div class="form__contact-wrapper">
+              <div class="contact-control">
+                <label class="form__label contact-control__label" for="email">E&#8209mail:*</label>
+                <input class="form__input contact-control__input" id="email" type="email" name="owner-email" value="kuklachev@gmail.com" required>
+                <svg class="contact-control__icon" width="19" height="14" fill="none">
+                  <use xlink:href="#email-icon"></use>
+                </svg>
+              </div>
+              <div class="contact-control">
+                <label class="form__label contact-control__label" for="tel">Телефон:*</label>
+                <input class="form__input contact-control__input" id="tel" type="tel" name="owner-tel" value="8 (960) 900-60-90" required>
+                <svg class="contact-control__icon" width="20" height="20" fill="none">
+                  <use xlink:href="#phone-icon"></use>
+                </svg>
+              </div>
+>>>>>>> master
             </div>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--comment">
-          <h3 class="form__legend form__legend--comment form__legend--stripes">Комментарий</h3>
-          <div class="form__textarea-wrapper container">
-            <textarea class="form__textarea form__textarea--style" rows="5" name="comment">Расскажите обо всех повадках кота</textarea>
+          <div class="container">
+            <h3 class="form__legend form__legend--comment form__legend--stripes">Комментарий</h3>
+            <div class="form__textarea-wrapper">
+              <textarea class="form__textarea form__textarea--style" rows="5" name="comment">Расскажите обо всех повадках кота</textarea>
+            </div>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset-checkbox">
-          <h3 class="form__legend form__legend--checkbox form__legend--stripes">Дополнительно</h3>
-          <div class="form__checkbox-wrapper container">
-            <div class="checkbox-control">
-              <input class="form__checkbox checkbox-control__input visually-hidden" type="checkbox" id="sugar-substitute" name="sugar-substitute" checked>
-              <label class="form__label checkbox-control__label" for="sugar-substitute">Сахарозаменитель</label>
-            </div>
-            <div class="checkbox-control">
-              <input class="form__checkbox checkbox-control__input visually-hidden" type="checkbox" id="water" name="water">
-              <label class="form__label checkbox-control__label" for="water">Питьевая вода</label>
-            </div>
-            <div class="checkbox-control">
-              <input class="form__checkbox checkbox-control__input visually-hidden" type="checkbox" id="milk" name="milk">
-              <label class="form__label checkbox-control__label" for="milk">Молоко</label>
-            </div>
-            <div class="checkbox-control">
-              <input class="form__checkbox checkbox-control__input visually-hidden" type="checkbox" id="vitamins" name="vitamins">
-              <label class="form__label checkbox-control__label" for="vitamins">Витамины</label>
+          <div class="container">
+            <h3 class="form__legend form__legend--checkbox form__legend--stripes">Дополнительно</h3>
+            <div class="form__checkbox-wrapper">
+              <div class="checkbox-control">
+                <input class="form__checkbox checkbox-control__input visually-hidden" type="checkbox" id="sugar-substitute" name="sugar-substitute" checked>
+                <label class="form__label checkbox-control__label" for="sugar-substitute">Сахарозаменитель</label>
+              </div>
+              <div class="checkbox-control">
+                <input class="form__checkbox checkbox-control__input visually-hidden" type="checkbox" id="water" name="water">
+                <label class="form__label checkbox-control__label" for="water">Питьевая вода</label>
+              </div>
+              <div class="checkbox-control">
+                <input class="form__checkbox checkbox-control__input visually-hidden" type="checkbox" id="milk" name="milk">
+                <label class="form__label checkbox-control__label" for="milk">Молоко</label>
+              </div>
+              <div class="checkbox-control">
+                <input class="form__checkbox checkbox-control__input visually-hidden" type="checkbox" id="vitamins" name="vitamins">
+                <label class="form__label checkbox-control__label" for="vitamins">Витамины</label>
+              </div>
             </div>
           </div>
         </fieldset>
