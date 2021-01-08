@@ -5,7 +5,15 @@
 .page-footer__top {
   @media (min-width: @desktop-width) {
     position: relative;
-    width: 1440px;
+  }
+}
+
+.page-footer__top-wrapper {
+  background-color: transparent;
+  pointer-events: none;
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
     margin: 0 auto;
   }
 }
@@ -18,7 +26,6 @@
     width: 570px;
     position: absolute;
     top: 95px;
-    left: 110px;
   }
 }
 
