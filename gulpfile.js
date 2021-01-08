@@ -44,29 +44,41 @@ exports.styles = styles;
 
 // Scripts
 
-// const scripts = () => {
-//   return gulp.src("source/js/script.js")                 Отключил, т.к. вызывает ошибку
-//     .pipe(uglify())
-//     .pipe(rename("script.min.js"))
-//     .pipe(gulp.dest("build/js"))
-//     .pipe(sync.stream());
-// }
+const scripts = () => {
+  return gulp.src("source/js/scripts.js")
+    .pipe(uglify())
+    .pipe(rename("scripts.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
 
-// exports.scripts = scripts;
+exports.scripts = scripts;
 
 // Images
 
 const images = () => {
-  return gulp.src("source/img/*.{jpg,png,svg}")
+  return gulp.src("source/img/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
       imagemin.mozjpeg({progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"))
 }
 
 exports.images = images;
+
+// const images = () => {
+//   return gulp.src("source/img/*.{jpg,png,svg}")
+//     .pipe(imagemin([
+//       imagemin.optipng({optimizationLevel: 3}),
+//       imagemin.mozjpeg({progressive: true}),
+//       imagemin.svgo()
+//     ]))
+//     .pipe(gulp.dest("build/img"))
+// }
+
+// exports.images = images;
 
 // WebP
 
@@ -140,7 +152,7 @@ const reload = done => {
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series(styles));
-  // gulp.watch("source/js/script.js", gulp.series(scripts));  Отключил, т.к. вызывает ошибку
+  gulp.watch("source/js/scripts.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
@@ -150,7 +162,7 @@ const build = gulp.series(
   clean,
   styles,
   html,
-// scripts,            Отключил, т.к. вызывает ошибку
+  scripts,
   sprite,
   copy,
   images,
@@ -166,7 +178,7 @@ exports.default = gulp.series(
   gulp.parallel(
     styles,
     html,
-    // scripts,
+    scripts,
     sprite,
     copy,
     createWebp
