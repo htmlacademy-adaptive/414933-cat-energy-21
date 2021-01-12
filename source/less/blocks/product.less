@@ -51,11 +51,14 @@
     margin-top: -80px;
     padding: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    height: 205px;
+  }
 }
 
 .product__img {
   @media (min-width: @tablet-width) {
-    width: 170px;
     padding: 0;
     object-fit: contain;
   }
@@ -74,6 +77,10 @@
     flex-grow: 0;
     flex-basis: auto;
     padding-top: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 38px;
   }
 }
 
