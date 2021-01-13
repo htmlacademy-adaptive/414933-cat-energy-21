@@ -3,6 +3,8 @@
 let mobileMenu = document.querySelector('.page-nav');
 let menuToggleButton = document.querySelector('.page-header__toggle');
 
+mobileMenu.classList.add('page-nav--closed');
+
 menuToggleButton.onclick = function() {
   mobileMenu.classList.toggle('page-nav--closed');
   mobileMenu.classList.toggle('page-nav--opened');
