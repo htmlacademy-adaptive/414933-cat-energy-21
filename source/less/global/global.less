@@ -5,6 +5,7 @@
   src: url("../../fonts/oswaldregular.woff2") format("woff2"), url("../../fonts/oswaldregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+  // font-display: swap;
 }
 
 @font-face {
@@ -12,10 +13,12 @@
   src: url("../../fonts/oswaldmedium.woff2") format("woff2"), url("../../fonts/oswaldmedium.woff");
   font-weight: 500;
   font-style: normal;
+  // font-display: swap;
 }
 
 // Media
 
+@mobile-only: 767px;
 @tablet-width: 768px;
 @desktop-width: 1440px;
 
@@ -36,8 +39,6 @@ a {
 }
 
 img {
-  // width: auto;
-  // height: 100%;
   max-width: 100%;
   height: auto;
 }
