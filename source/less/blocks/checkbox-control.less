@@ -57,6 +57,10 @@
   }
 }
 
+.checkbox-control__input:focus + label::before {
+  outline: 2px solid @special_dark-grey;
+}
+
 .checkbox-control__input:hover + label::before {
   background-image: url("../../img/checkbox-hover.svg");
   background-position: 0 0;
