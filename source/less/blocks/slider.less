@@ -142,6 +142,19 @@
     font-size: 20px;
     line-height: 1;
     border-bottom: 1px dotted @special_grey-2;
+    cursor: pointer;
+  }
+}
+
+.slider__control-name:hover {
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid @special_border-black;
+  }
+}
+
+.slider__control-name:active {
+  @media (min-width: @tablet-width) {
+    border: none;
   }
 }
 

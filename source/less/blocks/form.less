@@ -158,7 +158,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 92px;
+    margin-bottom: 66px;
   }
 }
 
@@ -204,6 +204,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -283,6 +284,15 @@
     font-size: 20px;
     line-height: 30/20;
   }
+}
+
+.form__textarea:hover {
+  border: 1px solid @special_grey-2;
+}
+
+.form__textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px @special_dark-grey;
 }
 
 .form__bottom-wrapper {

@@ -36,10 +36,11 @@
   border: 1px solid @special_grey-2;
 }
 
-.text-control__input:active {
-  border: 2px solid @basic_black;
+.text-control__input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px @special_dark-grey;
 }
 
 .text-control__input:invalid {
-  border: 2px solid @error;
+  box-shadow: 0 0 0 2px @error;
 }

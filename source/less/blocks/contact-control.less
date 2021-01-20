@@ -13,6 +13,7 @@
   @media (min-width: @desktop-width) {
     width: 570px;
     margin: 0;
+    margin-bottom: 25px;
   }
 }
 
@@ -31,7 +32,7 @@
   position: relative;
   padding-left: 13px;
   padding-right: 35px;
-  border: 1px solid @special_grey-2;
+  border: 1px solid @special_border-grey-2;
 
   @media (min-width: @tablet-width) {
     padding-left: 18px;
@@ -39,12 +40,17 @@
   }
 }
 
+.contact-control__input:hover {
+  border: 1px solid @special_grey-2;
+}
+
 .contact-control__input:focus {
-  border: 2px solid @basic_black;
+  outline: none;
+  box-shadow: 0 0 0 2px @special_dark-grey;
 }
 
 .contact-control__input:invalid {
-  border: 2px solid @error;
+  box-shadow: 0 0 0 2px @error;
 }
 
 .contact-control__input + svg {
