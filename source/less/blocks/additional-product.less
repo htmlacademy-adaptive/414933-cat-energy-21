@@ -73,7 +73,14 @@
 
 .additional-product__cost {
   @media (min-width: @tablet-width) {
+    min-width: 45px;
     margin-left: 48px;
+    text-align: end;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
   }
 }
 

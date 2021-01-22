@@ -10,40 +10,39 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-        <div class="page-header__logo-wrapper">
-          <a class="page-header__logo-link">
-            <picture>
-              <source media="(min-width: 1440px" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="page-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Логотим с изображением кота">
-            </picture>
-            <picture>
-              <img class="page-header__logo-title" src="img/logo-title.svg" width="100" height="20" alt="Кэт энерджи">
-            </picture>
-          </a>
-          <button class="page-header__toggle page-header__toggle--opened" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+        <div class="container page-header__layout">
+          <div class="page-header__logo-wrapper">
+            <a class="page-header__logo-link">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-mobile.svg" width="190" height="38" alt="Логотим с изображением кота">
+              </picture>
+            </a>
+            <button class="page-header__toggle page-header__toggle--hidden page-header__toggle--opened" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
+          <nav class="page-header__nav page-nav page-nav--opened">
+            <ul class="page-nav__list">
+              <li class="page-nav__item">
+                <a class="page-nav__link page-nav__link--current">Главная</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="page-nav page-nav--opened">
-          <ul class="page-nav__list">
-            <li class="page-nav__item">
-              <a class="page-nav__link page-nav__link--current">Главная</a>
-            </li>
-            <li class="page-nav__item">
-              <a class="page-nav__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="page-nav__item">
-              <a class="page-nav__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Питание для котов Cat Energy</h1>
       <section class="promo">
           <div class="container">
-            <h2 class="promo__title">Функциональное питание для&#160котов</h2>
+            <h2 class="promo__title">Функциональное питание для&#160;котов</h2>
             <p class="promo__text">Занялся собой? Займись котом!</p>
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can.webp 1x, img/index-can@2x.webp 2x">
@@ -67,7 +66,7 @@
               </li>
               <li class="programm-variants__item">
                 <h3 class="programm-variants__title programm-variants__title--pro">Набор массы</h3>
-                <p class="programm-variants__description">Заработать авторитет среди дворовых котов и&#160даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые</br> мышцы!</p>
+                <p class="programm-variants__description">Заработать авторитет среди дворовых котов и&#160;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые<br> мышцы!</p>
                 <a class="programm-variants__link programm-variants__link--icon" href="#">каталог pro</a>
               </li>
             </ul>
@@ -87,7 +86,7 @@
                 <p class="promo-descriptions__text promo-descriptions__text--easy">Замените один-два приема обычной еды на наше функциональное питание.</p>
               </li>
               <li class="promo-descriptions__item promo-descriptions__item--fast">
-                <p class="promo-descriptions__text promo-descriptions__text--fast">Уже через месяц наслаждайтесь изменениями к лучшему вашего&#160питомца!</p>
+                <p class="promo-descriptions__text promo-descriptions__text--fast">Уже через месяц наслаждайтесь изменениями к лучшему вашего&#160;питомца!</p>
               </li>
             </ul>
           </div>
@@ -144,12 +143,12 @@
         <h2 class="visually-hidden">Контакты</h2>
           <div class="page-footer__top-wrapper">
             <div class="page-footer__contacts contacts">
-                <p class="contacts__slogan">Приглашаем к&#160сотрудничеству дилеров!</p>
+                <p class="contacts__slogan">Приглашаем к&#160;сотрудничеству дилеров!</p>
                 <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
             </div>
           </div>
           <div class="page-footer__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1607619667513!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1607619667513!5m2!1sru!2sru" width="100" height="100" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
       </div>
       <div class="page-footer__bottom footer-bottom container">
@@ -182,7 +181,7 @@
             </a>
           </li>
         </ul>
-        <a class="footer-bottom__copyright" href="https://htmlacademy.ru/">
+        <a class="footer-bottom__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blanc" rel="nofollow noopener">
           <span>HTML Academy</span>
           <svg class="footer-bottom__copyright-logo" width="27" height="34">
             <use xlink:href="img/sprite.svg#academy-logo"></use>

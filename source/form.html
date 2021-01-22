@@ -10,38 +10,37 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__logo-wrapper">
-        <a class="page-header__logo-link" href="index.html">
-          <picture>
-            <source media="(min-width: 1440px" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Логотим с изображением кота">
-          </picture>
-          <picture>
-            <img class="page-header__logo-title" src="img/logo-title.svg" width="100" height="20" alt="Кэт энерджи">
-          </picture>
-        </a>
-        <button class="page-header__toggle page-header__toggle--opened" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <div class="container page-header__layout">
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo-link" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-mobile.svg" width="190" height="38" alt="Логотим с изображением кота">
+            </picture>
+          </a>
+          <button class="page-header__toggle page-header__toggle--hidden page-header__toggle--opened" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <nav class="page-header__nav page-nav page-nav--opened">
+          <ul class="page-nav__list">
+            <li class="page-nav__item">
+              <a class="page-nav__link page-nav__link--inner" href="index.html">Главная</a>
+            </li>
+            <li class="page-nav__item">
+              <a class="page-nav__link page-nav__link--inner" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="page-nav__item">
+              <a class="page-nav__link page-nav__link--inner page-nav__link--current page-nav__link--inner-current">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="page-nav">
-        <ul class="page-nav__list">
-          <li class="page-nav__item">
-            <a class="page-nav__link page-nav__link--inner" href="index.html">Главная</a>
-          </li>
-          <li class="page-nav__item">
-            <a class="page-nav__link page-nav__link--inner" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="page-nav__item">
-            <a class="page-nav__link page-nav__link--inner page-nav__link--current page-nav__link--inner-current">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
   </header>
     <main class="page-main">
       <h1 class="page-main__title container">Подбор программы</h1>
-      <p class="page-main__description container">Заполните анкету, и мы подберем</br> программу питания для вашего кота</p>
+      <p class="page-main__description container">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
       <form class="page-main__form form" action="https://echo.htmlacademy.ru/courses" method="get">
         <div class="form__fieldset-wrapper container">
           <fieldset class="form__fieldset form__fieldset--text">
@@ -51,11 +50,11 @@
               <input class="form__input text-control__input" id="cat-name" type="text" name="cat-name" value="Барсик" required>
             </div>
             <div class="text-control">
-              <label class="form__label text-control__label" for="cat-weight">Вес&#160(кг):*</label>
+              <label class="form__label text-control__label" for="cat-weight">Вес&#160;(кг):*</label>
               <input class="form__input text-control__input" id="cat-weight" type="text" name="cat-weight" value="7" required>
             </div>
             <div class="text-control">
-              <label class="form__label text-control__label" for="cat-age">Возраст&#160(лет):</label>
+              <label class="form__label text-control__label" for="cat-age">Возраст&#160;(лет):</label>
               <input class="form__input text-control__input" id="cat-age" type="text" name="cat-age" value="7">
             </div>
           </fieldset>
@@ -80,7 +79,7 @@
             <h3 class="form__legend form__legend--stripes">Контактные данные (владельца кота)</h3>
             <div class="form__contact-wrapper">
               <div class="contact-control">
-                <label class="form__label contact-control__label" for="email">E&#8209mail:*</label>
+                <label class="form__label contact-control__label" for="email">E&#8209;mail:*</label>
                 <input class="form__input contact-control__input" id="email" type="email" name="owner-email" value="kuklachev@gmail.com" required>
                 <svg class="contact-control__icon" width="19" height="14" fill="none">
                   <use xlink:href="img/sprite.svg#icon_email"></use>
@@ -138,12 +137,12 @@
         <h2 class="visually-hidden">Контакты</h2>
           <div class="page-footer__top-wrapper">
             <div class="page-footer__contacts contacts contacts--inner-page">
-                <p class="contacts__slogan">Приглашаем к&#160сотрудничеству дилеров!</p>
+                <p class="contacts__slogan">Приглашаем к&#160;сотрудничеству дилеров!</p>
                 <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
             </div>
           </div>
           <div class="page-footer__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1607619667513!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1607619667513!5m2!1sru!2sru" width="100" height="100" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
       </div>
       <div class="page-footer__bottom footer-bottom container">
@@ -176,7 +175,7 @@
             </a>
           </li>
         </ul>
-        <a class="footer-bottom__copyright" href="https://htmlacademy.ru/">
+        <a class="footer-bottom__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blanc" rel="nofollow noopener">
           <span>HTML Academy</span>
           <svg class="footer-bottom__copyright-logo" width="27" height="34">
             <use xlink:href="img/sprite.svg#academy-logo"></use>

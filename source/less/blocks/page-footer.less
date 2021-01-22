@@ -31,10 +31,36 @@
 
 .page-footer__map {
   height: 362px;
+  background-image: url("../../img/map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/map-mobile@2x.png");
+  }
 
   @media (min-width: @tablet-width) {
     height: 400px;
+    background-image: url("../../img/map-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/map-tablet@2x.png");
+    }
   }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/map-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/map-desktop@2x.png");
+    }
+  }
+}
+
+.page-footer__map iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .page-footer__logo {
