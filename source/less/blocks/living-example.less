@@ -11,7 +11,7 @@
   @media (min-width: @desktop-width) {
     padding-top: 75px;
     border: none;
-    background-image: linear-gradient(@basic_white 0%, @basic_white 31%, @special_bg-grey 31%, @special_bg-grey 100%);
+    background-image: linear-gradient(@basic_white 0%, @basic_white 32%, @special_bg-grey 32%, @special_bg-grey 100%);
   }
 }
 
@@ -93,6 +93,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: -14px;
   }
 
   @media (min-width: @desktop-width) {
@@ -177,7 +178,7 @@
 .living-example__cost {
   margin: 0;
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20/14;
@@ -222,6 +223,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    display: flex;
+    flex: 0 0 646px;
     margin: -72px 0 -75px;
   }
 }
